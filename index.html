@@ -127,6 +127,12 @@
     .nav-logo {
       display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.125rem;
     }
+    .logo-syd {
+      background: var(--gradient);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+      display: inline;
+    }
     .nav-logo-mark {
       width: 36px; height: 36px;
       display: flex; align-items: center; justify-content: center;
@@ -580,7 +586,7 @@
         <div class="nav-logo-mark">
           <img src="logo-icon.png" alt="AgenSyd logo" width="36" height="36" />
         </div>
-        <span>AgenSyd</span>
+        <span>Agen<span class="logo-syd">Syd</span></span>
       </a>
       <ul class="nav-links" role="list">
         <li><a href="#why">Pourquoi nous</a></li>
@@ -1111,7 +1117,7 @@
           <div class="footer-logo-mark">
             <img src="logo-icon.png" alt="" aria-hidden="true" width="32" height="32" />
           </div>
-          AgenSyd
+          Agen<span class="logo-syd">Syd</span>
         </div>
         <p class="footer-desc">Votre partenaire digital pour les petits commerces français. Sites vitrines et e-commerce livrés en 72h, tout inclus.</p>
         <a href="mailto:contact@agensyd.fr" style="font-size:.875rem;color:rgba(255,255,255,.7);transition:color .15s;">contact@agensyd.fr</a>
