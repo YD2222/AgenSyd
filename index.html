@@ -1054,7 +1054,7 @@
         </div>
         <div class="contact-form">
           <p class="form-title">Parlez-nous de votre projet</p>
-          <form id="contactForm" novalidate aria-label="Formulaire de contact">
+          <form id="contactForm" action="https://formspree.io/f/xzdqvqzj" method="POST" novalidate aria-label="Formulaire de contact">
             <div class="form-row">
               <div class="form-group">
                 <label for="name">Votre prénom <span aria-hidden="true">*</span></label>
@@ -1238,13 +1238,25 @@
     if (textNode) { textNode.nodeValue = 'Envoi en cours… '; }
     if (arrow) { arrow.style.display = 'none'; }
 
-    setTimeout(function() {
-      document.getElementById('form-success').classList.add('show');
-      form.reset();
+    var data = new FormData(form);
+    fetch('https://formspree.io/f/xzdqvqzj', {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    }).then(function(response) {
+      if (response.ok) {
+        document.getElementById('form-success').classList.add('show');
+        form.reset();
+      } else {
+        alert('Une erreur est survenue. Merci de nous contacter directement à contact@agensyd.fr');
+      }
+    }).catch(function() {
+      alert('Une erreur est survenue. Merci de nous contacter directement à contact@agensyd.fr');
+    }).finally(function() {
       btn.disabled = false;
       if (textNode) { textNode.nodeValue = 'Recevoir mon devis gratuit '; }
       if (arrow) { arrow.style.display = ''; }
-    }, 1200);
+    });
   });
 </script>
 </body>
