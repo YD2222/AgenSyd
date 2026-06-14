@@ -262,15 +262,19 @@
     .mockup-body { padding: 18px; }
     .mockup-hero-img {
       height: 110px; border-radius: 10px; margin-bottom: 14px;
-      background: linear-gradient(135deg, #EDE9FE 0%, #DBEAFE 100%);
-      display: flex; align-items: center; justify-content: center;
       position: relative; overflow: hidden;
+      background: #E4E4E7;
     }
-    .mockup-hero-img::before {
-      content: ''; position: absolute; inset: 0;
-      background: var(--gradient); opacity: .12;
+    .mockup-slides { display: flex; width: 200%; height: 100%; animation: slideshow 6s ease-in-out infinite; }
+    .mockup-slides img {
+      width: 50%; height: 100%; object-fit: cover; object-position: top center;
+      flex-shrink: 0; display: block;
     }
-    .mockup-hero-img svg { width: 40px; height: 40px; opacity: .5; }
+    @keyframes slideshow {
+      0%, 40%  { transform: translateX(0); }
+      50%, 90% { transform: translateX(-50%); }
+      100%     { transform: translateX(0); }
+    }
     .mockup-lines { display: flex; flex-direction: column; gap: 8px; }
     .mockup-line {
       height: 10px; border-radius: 100px; background: #E4E4E7;
@@ -696,7 +700,10 @@
             </div>
             <div class="mockup-body">
               <div class="mockup-hero-img">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3h16.5M3.75 3v1.5m0-1.5L3 21h18l-.75-18M3.75 4.5h16.5m-16.5 0L4.5 21m15-16.5L18.75 21M9 9.75h6M9 12.75h6M9 15.75h6"/></svg>
+                <div class="mockup-slides">
+                  <img src="https://image.thum.io/get/width/800/crop/440/https://www.kessefart.com/" alt="Kessef Art" loading="lazy" />
+                  <img src="https://image.thum.io/get/width/800/crop/440/https://www.sheisfit.fr/" alt="She Is Fit" loading="lazy" />
+                </div>
               </div>
               <div class="mockup-lines">
                 <div class="mockup-line"></div>
