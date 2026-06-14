@@ -255,36 +255,64 @@
     .mockup-bar {
       background: #F4F4F5; height: 36px; display: flex; align-items: center;
       padding: 0 14px; gap: 7px; border-bottom: 1px solid #E4E4E7;
+      flex-shrink: 0;
     }
-    .mockup-dot {
-      width: 10px; height: 10px; border-radius: 50%;
-    }
-    .mockup-body { padding: 18px; }
-    .mockup-hero-img {
-      height: 110px; border-radius: 10px; margin-bottom: 14px;
+    .mockup-dot { width: 10px; height: 10px; border-radius: 50%; }
+    /* Screenshot viewport — fills the whole inner area below the browser bar */
+    .mockup-viewport {
       position: relative; overflow: hidden;
-      background: #E4E4E7;
+      height: 280px; background: #E4E4E7;
     }
-    .mockup-slides { display: flex; width: 200%; height: 100%; animation: slideshow 6s ease-in-out infinite; }
+    .mockup-slides {
+      display: flex; height: 100%;
+      width: 200%;
+      animation: slideshow 7s ease-in-out infinite;
+    }
     .mockup-slides img {
-      width: 50%; height: 100%; object-fit: cover; object-position: top center;
+      width: 50%; height: 100%;
+      object-fit: cover; object-position: top center;
       flex-shrink: 0; display: block;
     }
     @keyframes slideshow {
-      0%, 40%  { transform: translateX(0); }
-      50%, 90% { transform: translateX(-50%); }
+      0%, 38%  { transform: translateX(0); }
+      48%, 88% { transform: translateX(-50%); }
       100%     { transform: translateX(0); }
     }
-    .mockup-lines { display: flex; flex-direction: column; gap: 8px; }
-    .mockup-line {
-      height: 10px; border-radius: 100px; background: #E4E4E7;
+    /* Pill label showing which site is displayed */
+    .mockup-site-label {
+      position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);
+      background: rgba(0,0,0,.55); backdrop-filter: blur(8px);
+      color: #fff; font-size: .72rem; font-weight: 600; letter-spacing: .04em;
+      padding: 4px 12px; border-radius: 100px; white-space: nowrap;
+      pointer-events: none;
+      animation: label-swap 7s ease-in-out infinite;
     }
-    .mockup-line.short { width: 60%; }
-    .mockup-line.xshort { width: 40%; }
-    .mockup-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 14px; }
-    .mockup-card {
-      height: 60px; border-radius: 8px; background: var(--gradient-soft);
-      border: 1px solid var(--border-strong);
+    @keyframes label-swap {
+      0%, 38%  { opacity: 1; content: 'kessefart.com'; }
+      42%      { opacity: 0; }
+      48%, 88% { opacity: 1; }
+      92%      { opacity: 0; }
+      100%     { opacity: 1; }
+    }
+    .mockup-label-a, .mockup-label-b {
+      position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);
+      background: rgba(0,0,0,.52); backdrop-filter: blur(8px);
+      color: #fff; font-size: .72rem; font-weight: 600; letter-spacing: .03em;
+      padding: 4px 12px; border-radius: 100px; white-space: nowrap;
+      pointer-events: none;
+    }
+    .mockup-label-a { animation: show-a 7s ease-in-out infinite; }
+    .mockup-label-b { animation: show-b 7s ease-in-out infinite; }
+    @keyframes show-a {
+      0%, 35%  { opacity: 1; }
+      42%, 95% { opacity: 0; }
+      100%     { opacity: 1; }
+    }
+    @keyframes show-b {
+      0%, 45%  { opacity: 0; }
+      52%, 88% { opacity: 1; }
+      95%      { opacity: 0; }
+      100%     { opacity: 0; }
     }
     .mockup-badge-floating {
       position: absolute; bottom: -14px; left: 50%; transform: translateX(-50%);
@@ -698,22 +726,13 @@
               <div class="mockup-dot" style="background:#28CA41"></div>
               <div style="flex:1;height:16px;background:#E4E4E7;border-radius:100px;margin-left:8px;"></div>
             </div>
-            <div class="mockup-body">
-              <div class="mockup-hero-img">
-                <div class="mockup-slides">
-                  <img src="https://image.thum.io/get/width/800/crop/440/https://www.kessefart.com/" alt="Kessef Art" loading="lazy" />
-                  <img src="https://image.thum.io/get/width/800/crop/440/https://www.sheisfit.fr/" alt="She Is Fit" loading="lazy" />
-                </div>
+            <div class="mockup-viewport">
+              <div class="mockup-slides">
+                <img src="https://image.thum.io/get/width/900/crop/560/https://www.kessefart.com/" alt="Kessef Art — site réalisé par AgenSyd" loading="lazy" />
+                <img src="https://image.thum.io/get/width/900/crop/560/https://www.sheisfit.fr/" alt="She Is Fit — site réalisé par AgenSyd" loading="lazy" />
               </div>
-              <div class="mockup-lines">
-                <div class="mockup-line"></div>
-                <div class="mockup-line short"></div>
-                <div class="mockup-line xshort"></div>
-              </div>
-              <div class="mockup-cards">
-                <div class="mockup-card"></div>
-                <div class="mockup-card"></div>
-              </div>
+              <span class="mockup-label-a">kessefart.com</span>
+              <span class="mockup-label-b">sheisfit.fr</span>
             </div>
           </div>
           <div class="mockup-badge-floating">
