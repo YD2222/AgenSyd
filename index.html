@@ -258,62 +258,54 @@
       flex-shrink: 0;
     }
     .mockup-dot { width: 10px; height: 10px; border-radius: 50%; }
-    /* Screenshot viewport — fills the whole inner area below the browser bar */
+    /* ── Mockup viewport ── */
     .mockup-viewport {
       position: relative; overflow: hidden;
-      height: 280px; background: #E4E4E7;
+      height: 260px; background: #fff;
     }
-    .mockup-slides {
-      display: flex; height: 100%;
-      width: 200%;
-      animation: slideshow 7s ease-in-out infinite;
+    /* 3 slides stacked, fade in/out */
+    .mslide {
+      position: absolute; inset: 0;
+      opacity: 0; transition: opacity .8s ease;
     }
-    .mockup-slides img {
-      width: 50%; height: 100%;
-      object-fit: cover; object-position: top center;
-      flex-shrink: 0; display: block;
+    .mslide.active { opacity: 1; }
+    /* ── Slide shared layout ── */
+    .ms-nav {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 10px 14px; border-bottom: 1px solid #f0f0f0;
     }
-    @keyframes slideshow {
-      0%, 38%  { transform: translateX(0); }
-      48%, 88% { transform: translateX(-50%); }
-      100%     { transform: translateX(0); }
+    .ms-logo { font-size: .65rem; font-weight: 800; letter-spacing: .04em; }
+    .ms-nav-links { display: flex; gap: 10px; }
+    .ms-nav-links span { font-size: .5rem; color: #888; font-weight: 500; }
+    .ms-cta-sm {
+      font-size: .5rem; font-weight: 700; color: #fff;
+      padding: 3px 8px; border-radius: 20px;
     }
-    /* Pill label showing which site is displayed */
-    .mockup-site-label {
-      position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);
-      background: rgba(0,0,0,.55); backdrop-filter: blur(8px);
-      color: #fff; font-size: .72rem; font-weight: 600; letter-spacing: .04em;
-      padding: 4px 12px; border-radius: 100px; white-space: nowrap;
-      pointer-events: none;
-      animation: label-swap 7s ease-in-out infinite;
+    .ms-hero {
+      padding: 16px 14px 12px;
+      position: relative;
     }
-    @keyframes label-swap {
-      0%, 38%  { opacity: 1; content: 'kessefart.com'; }
-      42%      { opacity: 0; }
-      48%, 88% { opacity: 1; }
-      92%      { opacity: 0; }
-      100%     { opacity: 1; }
+    .ms-tag {
+      display: inline-block; font-size: .48rem; font-weight: 700;
+      letter-spacing: .08em; text-transform: uppercase;
+      padding: 2px 7px; border-radius: 20px; margin-bottom: 6px;
     }
-    .mockup-label-a, .mockup-label-b {
-      position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%);
-      background: rgba(0,0,0,.52); backdrop-filter: blur(8px);
-      color: #fff; font-size: .72rem; font-weight: 600; letter-spacing: .03em;
-      padding: 4px 12px; border-radius: 100px; white-space: nowrap;
-      pointer-events: none;
+    .ms-title { font-size: .9rem; font-weight: 800; line-height: 1.2; margin-bottom: 5px; }
+    .ms-sub { font-size: .52rem; color: #666; line-height: 1.5; margin-bottom: 10px; }
+    .ms-btn {
+      display: inline-block; font-size: .52rem; font-weight: 700; color: #fff;
+      padding: 5px 12px; border-radius: 20px;
     }
-    .mockup-label-a { animation: show-a 7s ease-in-out infinite; }
-    .mockup-label-b { animation: show-b 7s ease-in-out infinite; }
-    @keyframes show-a {
-      0%, 35%  { opacity: 1; }
-      42%, 95% { opacity: 0; }
-      100%     { opacity: 1; }
+    .ms-cards {
+      display: grid; grid-template-columns: 1fr 1fr 1fr;
+      gap: 6px; padding: 0 14px 14px;
     }
-    @keyframes show-b {
-      0%, 45%  { opacity: 0; }
-      52%, 88% { opacity: 1; }
-      95%      { opacity: 0; }
-      100%     { opacity: 0; }
+    .ms-card {
+      border-radius: 8px; padding: 8px;
+      font-size: .48rem; font-weight: 600;
     }
+    .ms-card-img { height: 28px; border-radius: 5px; margin-bottom: 5px; }
+    .ms-card-label { font-size: .44rem; color: #888; margin-top: 2px; font-weight: 400; }
     .mockup-badge-floating {
       position: absolute; bottom: -14px; left: 50%; transform: translateX(-50%);
       background: #fff; border: 1.5px solid var(--border-strong);
@@ -727,12 +719,100 @@
               <div style="flex:1;height:16px;background:#E4E4E7;border-radius:100px;margin-left:8px;"></div>
             </div>
             <div class="mockup-viewport">
-              <div class="mockup-slides">
-                <img src="https://image.thum.io/get/width/900/crop/560/https://www.kessefart.com/" alt="Kessef Art — site réalisé par AgenSyd" loading="lazy" />
-                <img src="https://image.thum.io/get/width/900/crop/560/https://www.sheisfit.fr/" alt="She Is Fit — site réalisé par AgenSyd" loading="lazy" />
+
+              <!-- Slide 1 : Restaurant -->
+              <div class="mslide active">
+                <div class="ms-nav">
+                  <div class="ms-logo" style="color:#C2410C;">🍽 Le Bouchon Lyonnais</div>
+                  <div class="ms-nav-links">
+                    <span>Menu</span><span>Réserver</span><span>Contact</span>
+                  </div>
+                  <div class="ms-cta-sm" style="background:#C2410C;">Réserver</div>
+                </div>
+                <div class="ms-hero" style="background:linear-gradient(135deg,#FFF7ED,#FFEDD5);">
+                  <div class="ms-tag" style="background:#FFEDD5;color:#C2410C;">⭐ Restaurant lyonnais</div>
+                  <div class="ms-title" style="color:#1C1C1E;">La cuisine<br>du terroir.</div>
+                  <div class="ms-sub">Ouvert du mardi au dimanche · 69001 Lyon</div>
+                  <div class="ms-btn" style="background:#C2410C;">Voir le menu →</div>
+                </div>
+                <div class="ms-cards">
+                  <div class="ms-card" style="background:#FFF7ED;">
+                    <div class="ms-card-img" style="background:linear-gradient(135deg,#FDBA74,#F97316);"></div>
+                    <div>Entrées</div><div class="ms-card-label">dès 9€</div>
+                  </div>
+                  <div class="ms-card" style="background:#FFF7ED;">
+                    <div class="ms-card-img" style="background:linear-gradient(135deg,#FB923C,#EA580C);"></div>
+                    <div>Plats</div><div class="ms-card-label">dès 18€</div>
+                  </div>
+                  <div class="ms-card" style="background:#FFF7ED;">
+                    <div class="ms-card-img" style="background:linear-gradient(135deg,#FED7AA,#FDBA74);"></div>
+                    <div>Desserts</div><div class="ms-card-label">dès 7€</div>
+                  </div>
+                </div>
               </div>
-              <span class="mockup-label-a">kessefart.com</span>
-              <span class="mockup-label-b">sheisfit.fr</span>
+
+              <!-- Slide 2 : Spa -->
+              <div class="mslide">
+                <div class="ms-nav">
+                  <div class="ms-logo" style="color:#0F766E;">✦ Spa Sérénité</div>
+                  <div class="ms-nav-links">
+                    <span>Soins</span><span>Tarifs</span><span>Réserver</span>
+                  </div>
+                  <div class="ms-cta-sm" style="background:#0F766E;">Réserver</div>
+                </div>
+                <div class="ms-hero" style="background:linear-gradient(135deg,#F0FDFA,#CCFBF1);">
+                  <div class="ms-tag" style="background:#CCFBF1;color:#0F766E;">✦ Institut & spa</div>
+                  <div class="ms-title" style="color:#134E4A;">Prenez soin<br>de vous.</div>
+                  <div class="ms-sub">Massages · Soins visage · Hammam · Paris 8e</div>
+                  <div class="ms-btn" style="background:#0F766E;">Découvrir nos soins →</div>
+                </div>
+                <div class="ms-cards">
+                  <div class="ms-card" style="background:#F0FDFA;">
+                    <div class="ms-card-img" style="background:linear-gradient(135deg,#5EEAD4,#14B8A6);"></div>
+                    <div>Massages</div><div class="ms-card-label">dès 60€</div>
+                  </div>
+                  <div class="ms-card" style="background:#F0FDFA;">
+                    <div class="ms-card-img" style="background:linear-gradient(135deg,#99F6E4,#5EEAD4);"></div>
+                    <div>Visage</div><div class="ms-card-label">dès 75€</div>
+                  </div>
+                  <div class="ms-card" style="background:#F0FDFA;">
+                    <div class="ms-card-img" style="background:linear-gradient(135deg,#CCFBF1,#99F6E4);"></div>
+                    <div>Forfaits</div><div class="ms-card-label">dès 120€</div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Slide 3 : Hôtel -->
+              <div class="mslide">
+                <div class="ms-nav">
+                  <div class="ms-logo" style="color:#1D4ED8;">🏨 Hôtel du Parc</div>
+                  <div class="ms-nav-links">
+                    <span>Chambres</span><span>Services</span><span>Contact</span>
+                  </div>
+                  <div class="ms-cta-sm" style="background:#1D4ED8;">Réserver</div>
+                </div>
+                <div class="ms-hero" style="background:linear-gradient(135deg,#EFF6FF,#DBEAFE);">
+                  <div class="ms-tag" style="background:#DBEAFE;color:#1D4ED8;">★★★ Hôtel Bordeaux</div>
+                  <div class="ms-title" style="color:#1E3A8A;">Un séjour<br>inoubliable.</div>
+                  <div class="ms-sub">20 chambres · Petit-déjeuner inclus · Centre-ville</div>
+                  <div class="ms-btn" style="background:#1D4ED8;">Voir les chambres →</div>
+                </div>
+                <div class="ms-cards">
+                  <div class="ms-card" style="background:#EFF6FF;">
+                    <div class="ms-card-img" style="background:linear-gradient(135deg,#93C5FD,#3B82F6);"></div>
+                    <div>Standard</div><div class="ms-card-label">dès 89€/nuit</div>
+                  </div>
+                  <div class="ms-card" style="background:#EFF6FF;">
+                    <div class="ms-card-img" style="background:linear-gradient(135deg,#60A5FA,#2563EB);"></div>
+                    <div>Supérieure</div><div class="ms-card-label">dès 129€/nuit</div>
+                  </div>
+                  <div class="ms-card" style="background:#EFF6FF;">
+                    <div class="ms-card-img" style="background:linear-gradient(135deg,#BFDBFE,#93C5FD);"></div>
+                    <div>Suite</div><div class="ms-card-label">dès 199€/nuit</div>
+                  </div>
+                </div>
+              </div>
+
             </div>
           </div>
           <div class="mockup-badge-floating">
@@ -1320,6 +1400,17 @@
       if (arrow) { arrow.style.display = ''; }
     });
   });
+
+  /* ── Mockup slideshow (fade between 3 mini-sites) ── */
+  (function() {
+    var slides = document.querySelectorAll('.mslide');
+    var idx = 0;
+    setInterval(function() {
+      slides[idx].classList.remove('active');
+      idx = (idx + 1) % slides.length;
+      slides[idx].classList.add('active');
+    }, 3200);
+  })();
 </script>
 </body>
 </html>
