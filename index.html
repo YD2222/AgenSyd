@@ -9,11 +9,125 @@
   <meta property="og:title" content="AgenSyd — Votre site web en 72h" />
   <meta property="og:description" content="Sites vitrines et e-commerce pour les petits commerces français. Livraison en 72h, tout inclus." />
   <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.agensyd.fr/" />
+  <meta property="og:image" content="https://www.agensyd.fr/logo.png" />
   <link rel="canonical" href="https://www.agensyd.fr/" />
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.agensyd.fr/#organization",
+        "name": "AgenSyd",
+        "legalName": "SYD INVEST",
+        "url": "https://www.agensyd.fr/",
+        "logo": { "@type": "ImageObject", "url": "https://www.agensyd.fr/logo.png" },
+        "email": "contact@agensyd.fr",
+        "telephone": "+33698312855",
+        "taxID": "FR69101059954",
+        "vatID": "FR69101059954",
+        "identifier": { "@type": "PropertyValue", "name": "SIRET", "value": "104 059 954 00012" },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "45 boulevard des Belges",
+          "postalCode": "69006",
+          "addressLocality": "Lyon",
+          "addressCountry": "FR"
+        },
+        "areaServed": { "@type": "Country", "name": "France" }
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://www.agensyd.fr/#service-provider",
+        "name": "AgenSyd",
+        "image": "https://www.agensyd.fr/logo.png",
+        "url": "https://www.agensyd.fr/",
+        "telephone": "+33698312855",
+        "email": "contact@agensyd.fr",
+        "priceRange": "€€",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "45 boulevard des Belges",
+          "postalCode": "69006",
+          "addressLocality": "Lyon",
+          "addressCountry": "FR"
+        },
+        "areaServed": { "@type": "Country", "name": "France" },
+        "parentOrganization": { "@id": "https://www.agensyd.fr/#organization" },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Formules de création de site web",
+          "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@id": "https://www.agensyd.fr/#service-essentiel" } },
+            { "@type": "Offer", "itemOffered": { "@id": "https://www.agensyd.fr/#service-pro" } },
+            { "@type": "Offer", "itemOffered": { "@id": "https://www.agensyd.fr/#service-ecommerce" } }
+          ]
+        }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.agensyd.fr/#service-essentiel",
+        "name": "Formule Essentiel",
+        "description": "Site vitrine sur-mesure jusqu'à 5 pages, responsive, SEO de base, hébergement 1 an inclus et formulaire de contact.",
+        "provider": { "@id": "https://www.agensyd.fr/#organization" },
+        "areaServed": { "@type": "Country", "name": "France" },
+        "serviceType": "Création de site vitrine",
+        "offers": {
+          "@type": "Offer",
+          "price": "1199",
+          "priceCurrency": "EUR",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.agensyd.fr/#pricing"
+        }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.agensyd.fr/#service-pro",
+        "name": "Formule Pro",
+        "description": "Site vitrine complet jusqu'à 10 pages avec système de réservation en ligne, SEO avancé, galerie photos, hébergement 2 ans inclus et support WhatsApp prioritaire.",
+        "provider": { "@id": "https://www.agensyd.fr/#organization" },
+        "areaServed": { "@type": "Country", "name": "France" },
+        "serviceType": "Création de site web professionnel avec réservation en ligne",
+        "offers": {
+          "@type": "Offer",
+          "price": "1499",
+          "priceCurrency": "EUR",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.agensyd.fr/#pricing"
+        }
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.agensyd.fr/#service-ecommerce",
+        "name": "Formule E-commerce",
+        "description": "Boutique en ligne complète avec paiement CB sécurisé, jusqu'à 100 produits, gestion des commandes, hébergement 2 ans inclus et formation d'1h incluse.",
+        "provider": { "@id": "https://www.agensyd.fr/#organization" },
+        "areaServed": { "@type": "Country", "name": "France" },
+        "serviceType": "Création de boutique e-commerce",
+        "offers": {
+          "@type": "Offer",
+          "price": "1999",
+          "priceCurrency": "EUR",
+          "availability": "https://schema.org/InStock",
+          "url": "https://www.agensyd.fr/#pricing"
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.agensyd.fr/#website",
+        "url": "https://www.agensyd.fr/",
+        "name": "AgenSyd",
+        "publisher": { "@id": "https://www.agensyd.fr/#organization" },
+        "inLanguage": "fr-FR"
+      }
+    ]
+  }
+  </script>
   <style>
     /* ─── Reset & Base ─── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
