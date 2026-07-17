@@ -124,6 +124,76 @@
         "name": "AgenSyd",
         "publisher": { "@id": "https://www.agensyd.fr/#organization" },
         "inLanguage": "fr-FR"
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.agensyd.fr/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Combien coûte un site web avec AgenSyd ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AgenSyd propose 3 formules à prix fixe, sans surprise : Essentiel à 1199€ (site vitrine jusqu'à 5 pages), Pro à 1499€ (avec réservation en ligne) et E-commerce à 1999€ (boutique en ligne complète). L'hébergement, le nom de domaine et la maintenance sont inclus dans chaque formule."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Le site est-il vraiment livré en 72h ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oui : une fois que le client a rempli le formulaire et envoyé ses contenus (textes, photos, logo), AgenSyd livre le site en 72 heures ouvrées. Ce délai suppose que les informations nécessaires sont transmises dès le départ."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Qu'est-ce qui est inclus dans le prix d'un site AgenSyd ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Chaque formule AgenSyd inclut le design sur-mesure, l'hébergement (1 an pour Essentiel, 2 ans pour Pro et E-commerce), le nom de domaine, un certificat SSL, la maintenance technique et un formulaire de contact. Aucun frais caché."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Que se passe-t-il après la période d'hébergement incluse ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "À la fin de la période d'hébergement incluse (1 ou 2 ans selon la formule), AgenSyd contacte le client pour proposer un renouvellement à un tarif transparent. Le site continue de fonctionner normalement, sans coupure automatique."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Le client est-il propriétaire de son site une fois livré ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Oui. Une fois le solde payé, AgenSyd cède l'intégralité des droits sur le site créé : contenus, design et code appartiennent au client, qui n'est jamais lié contractuellement à AgenSyd après la livraison."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Comment se passe le paiement chez AgenSyd ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Le paiement se fait par virement bancaire, en deux temps : un acompte de 50% à la commande pour démarrer le projet, et le solde à la livraison, avant la mise en ligne définitive du site."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Peut-on demander des modifications après la livraison du site ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Chaque projet AgenSyd inclut un nombre raisonnable d'allers-retours pour ajuster les couleurs, textes et mises en page définis dans le brief initial. Une demande hors de ce cadre fait l'objet d'un devis complémentaire."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Avec quels types de commerces AgenSyd travaille-t-il ?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AgenSyd est spécialisé dans les sites web pour petits commerces : hôtels, restaurants, spas, bars et instituts. Chaque formule est adaptée à ces métiers (menu digital, réservation en ligne, galerie photos, référencement local)."
+            }
+          }
+        ]
       }
     ]
   }
@@ -605,6 +675,36 @@
     .testi-name { font-size: .9rem; font-weight: 700; }
     .testi-role { font-size: .8rem; color: var(--text-3); }
 
+    /* ─── FAQ ─── */
+    #faq { padding: 100px 0; background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .faq-header { text-align: center; margin-bottom: 56px; }
+    .faq-header .section-sub { margin: 0 auto; }
+    .faq-list { max-width: 780px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+    .faq-item { border: 1px solid var(--border); border-radius: var(--radius-sm); background: var(--bg); overflow: hidden; }
+    .faq-q {
+      width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 16px;
+      padding: 20px 22px; background: none; border: none; cursor: pointer; text-align: left;
+      font-family: inherit; font-size: 1rem; font-weight: 700; color: var(--text);
+    }
+    .faq-q:focus-visible { outline: 2px solid var(--violet); outline-offset: -2px; }
+    .faq-q .faq-icon {
+      flex-shrink: 0; width: 24px; height: 24px; border-radius: 50%;
+      background: var(--gradient-soft); color: var(--violet);
+      display: flex; align-items: center; justify-content: center;
+      transition: transform .25s cubic-bezier(.22,1,.36,1);
+    }
+    .faq-q .faq-icon svg { width: 13px; height: 13px; }
+    .faq-item.open .faq-q .faq-icon { transform: rotate(45deg); }
+    .faq-a {
+      max-height: 0; overflow: hidden; transition: max-height .3s cubic-bezier(.22,1,.36,1);
+    }
+    .faq-a p {
+      padding: 0 22px 20px; font-size: .9375rem; color: var(--text-2); line-height: 1.7;
+    }
+    .faq-more { text-align: center; margin-top: 32px; font-size: .9375rem; color: var(--text-2); }
+    .faq-more a { color: var(--violet); font-weight: 600; }
+    .faq-more a:hover { text-decoration: underline; }
+
     /* ─── CTA Final ─── */
     #contact {
       padding: 100px 0;
@@ -762,6 +862,7 @@
         <li><a href="#how">Comment ça marche</a></li>
         <li><a href="#pricing">Tarifs</a></li>
         <li><a href="#testimonials">Avis clients</a></li>
+        <li><a href="#faq">FAQ</a></li>
       </ul>
       <div class="nav-cta">
         <a href="tel:+33698312855" class="btn btn-ghost">Nous appeler</a>
@@ -780,6 +881,7 @@
     <a href="#how" onclick="closeMobile()">Comment ça marche</a>
     <a href="#pricing" onclick="closeMobile()">Tarifs</a>
     <a href="#testimonials" onclick="closeMobile()">Avis clients</a>
+    <a href="#faq" onclick="closeMobile()">FAQ</a>
     <a href="#contact" class="btn btn-primary" onclick="closeMobile()">Démarrer mon projet</a>
   </nav>
 </header>
@@ -1280,6 +1382,101 @@
   </div>
 </section>
 
+<!-- ─── FAQ ─── -->
+<section id="faq" aria-labelledby="faq-title">
+  <div class="container">
+    <div class="faq-header">
+      <p class="section-label reveal">Questions fréquentes</p>
+      <h2 class="section-title reveal reveal-delay-1" id="faq-title">Tout ce qu'il faut savoir avant de se lancer.</h2>
+      <p class="section-sub reveal reveal-delay-2">Les réponses aux questions qu'on nous pose le plus souvent sur nos sites vitrines et e-commerce.</p>
+    </div>
+
+    <div class="faq-list">
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">
+          Combien coûte un site web avec AgenSyd&nbsp;?
+          <span class="faq-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg></span>
+        </button>
+        <div class="faq-a">
+          <p>AgenSyd propose 3 formules à prix fixe, sans surprise&nbsp;: <strong>Essentiel à 1199€</strong> (site vitrine jusqu'à 5 pages), <strong>Pro à 1499€</strong> (avec réservation en ligne) et <strong>E-commerce à 1999€</strong> (boutique en ligne complète). L'hébergement, le nom de domaine et la maintenance sont inclus dans chaque formule.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">
+          Le site est-il vraiment livré en 72h&nbsp;?
+          <span class="faq-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg></span>
+        </button>
+        <div class="faq-a">
+          <p>Oui&nbsp;: une fois que vous avez rempli le formulaire et envoyé vos contenus (textes, photos, logo), AgenSyd livre votre site en <strong>72 heures ouvrées</strong>. Ce délai suppose que les informations nécessaires (menu, tarifs, coordonnées) sont transmises dès le départ&nbsp;— un retard de votre côté peut décaler la livraison d'autant.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">
+          Qu'est-ce qui est inclus dans le prix&nbsp;?
+          <span class="faq-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg></span>
+        </button>
+        <div class="faq-a">
+          <p>Chaque formule AgenSyd inclut le <strong>design sur-mesure</strong>, l'<strong>hébergement</strong> (1 an pour Essentiel, 2 ans pour Pro et E-commerce), le <strong>nom de domaine</strong>, un <strong>certificat SSL</strong>, la <strong>maintenance technique</strong> et un <strong>formulaire de contact</strong>. Aucun frais caché&nbsp;: le prix affiché est le prix final.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">
+          Que se passe-t-il après la période d'hébergement incluse&nbsp;?
+          <span class="faq-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg></span>
+        </button>
+        <div class="faq-a">
+          <p>À la fin de la période d'hébergement incluse (1 ou 2 ans selon votre formule), AgenSyd vous contacte pour vous proposer un renouvellement à un tarif transparent. Votre site continue de fonctionner normalement&nbsp;— il n'y a aucune coupure automatique ni relance agressive.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">
+          Suis-je propriétaire de mon site une fois livré&nbsp;?
+          <span class="faq-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg></span>
+        </button>
+        <div class="faq-a">
+          <p>Oui. Une fois le solde payé, AgenSyd vous cède l'intégralité des droits sur le site créé&nbsp;: contenus, design et code vous appartiennent. Vous n'êtes jamais bloqué chez AgenSyd&nbsp;— c'est votre site, votre nom de domaine, votre contenu.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">
+          Comment se passe le paiement&nbsp;?
+          <span class="faq-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg></span>
+        </button>
+        <div class="faq-a">
+          <p>Le paiement se fait par <strong>virement bancaire</strong>, en deux temps&nbsp;: un <strong>acompte de 50%</strong> à la commande pour démarrer le projet, et le <strong>solde à la livraison</strong>, avant la mise en ligne définitive du site.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">
+          Puis-je demander des modifications après la livraison&nbsp;?
+          <span class="faq-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg></span>
+        </button>
+        <div class="faq-a">
+          <p>Chaque projet inclut un nombre raisonnable d'allers-retours pour ajuster les couleurs, textes et mises en page définis dans le brief initial. Une demande qui sort de ce cadre (nouvelle page, nouvelle fonctionnalité) fait l'objet d'un devis complémentaire clair, sans obligation.</p>
+        </div>
+      </div>
+
+      <div class="faq-item reveal">
+        <button class="faq-q" aria-expanded="false">
+          AgenSyd travaille-t-il avec tous les types de commerces&nbsp;?
+          <span class="faq-icon" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M12 4.5v15m7.5-7.5h-15"/></svg></span>
+        </button>
+        <div class="faq-a">
+          <p>AgenSyd est spécialisé dans les sites web pour petits commerces&nbsp;: <strong>hôtels, restaurants, spas, bars et instituts</strong>. Chaque formule est adaptée à ces métiers (menu digital, réservation en ligne, galerie photos, référencement local) plutôt que d'être un template générique.</p>
+        </div>
+      </div>
+    </div>
+
+    <p class="faq-more">D'autres questions&nbsp;? <a href="#contact">Contactez-nous directement</a>, on répond en moins d'une heure.</p>
+  </div>
+</section>
+
 <!-- ─── CONTACT / CTA FINAL ─── -->
 <section id="contact" aria-labelledby="cta-title">
   <div class="container">
@@ -1515,6 +1712,25 @@
       slides[idx].classList.add('active');
     }, 3200);
   })();
+
+  /* ── FAQ accordion ── */
+  document.querySelectorAll('.faq-item').forEach(function(item) {
+    var btn = item.querySelector('.faq-q');
+    var answer = item.querySelector('.faq-a');
+    btn.addEventListener('click', function() {
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(openItem) {
+        if (openItem !== item) {
+          openItem.classList.remove('open');
+          openItem.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+          openItem.querySelector('.faq-a').style.maxHeight = null;
+        }
+      });
+      item.classList.toggle('open', !isOpen);
+      btn.setAttribute('aria-expanded', String(!isOpen));
+      answer.style.maxHeight = isOpen ? null : answer.scrollHeight + 'px';
+    });
+  });
 </script>
 </body>
 </html>
