@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Création de site web pour restaurant en 72h | AgenSyd</title>
+  <meta name="description" content="AgenSyd crée le site web de votre restaurant en 72h : menu digital, réservation en ligne, photos, référencement Google. À partir de 1199€, tout inclus." />
+  <meta property="og:title" content="Site web pour restaurant en 72h — AgenSyd" />
+  <meta property="og:description" content="Menu digital, réservation en ligne, référencement local. Votre site de restaurant livré en 72h, à partir de 1199€." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://www.agensyd.fr/restaurants.html" />
+  <meta property="og:image" content="https://www.agensyd.fr/logo.png" />
+  <link rel="canonical" href="https://www.agensyd.fr/restaurants.html" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "name": "Création de site web pour restaurant",
+        "provider": { "@type": "Organization", "name": "AgenSyd", "url": "https://www.agensyd.fr/" },
+        "areaServed": { "@type": "Country", "name": "France" },
+        "serviceType": "Création de site vitrine pour restaurant",
+        "description": "Site web sur-mesure pour restaurant livré en 72h : menu digital, réservation en ligne, galerie photos, référencement local.",
+        "offers": { "@type": "Offer", "priceCurrency": "EUR", "price": "1199", "url": "https://www.agensyd.fr/#pricing" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.agensyd.fr/restaurants.html",
+        "url": "https://www.agensyd.fr/restaurants.html",
+        "name": "Création de site web pour restaurant en 72h | AgenSyd",
+        "isPartOf": { "@type": "WebSite", "url": "https://www.agensyd.fr/", "name": "AgenSyd" },
+        "inLanguage": "fr-FR"
+      }
+    ]
+  }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --violet: #7C3AED; --violet-light: #8B5CF6; --violet-pale: #EDE9FE;
+      --blue: #2563EB; --blue-light: #3B82F6; --blue-pale: #DBEAFE;
+      --gradient: linear-gradient(135deg, #7C3AED 0%, #2563EB 100%);
+      --gradient-soft: linear-gradient(135deg, #EDE9FE 0%, #DBEAFE 100%);
+      --bg: #FAFAFA; --surface: #FFFFFF; --surface-2: #F5F3FF;
+      --border: #E4E4E7; --border-strong: #C4B5FD;
+      --text: #09090B; --text-2: #52525B; --text-3: #A1A1AA;
+      --radius: 16px; --radius-sm: 10px;
+      --shadow: 0 4px 16px rgba(124,58,237,.08), 0 2px 6px rgba(0,0,0,.04);
+      --shadow-lg: 0 20px 60px rgba(124,58,237,.14), 0 8px 24px rgba(0,0,0,.06);
+      --accent: #C2410C; --accent-pale: #FFF7ED; --accent-pale2: #FFEDD5;
+    }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body { font-family: 'DM Sans', 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+    .btn { display: inline-flex; align-items: center; gap: 8px; padding: 13px 26px; border-radius: 100px; font-size: .9375rem; font-weight: 600; cursor: pointer; transition: all .2s cubic-bezier(.22,1,.36,1); border: none; white-space: nowrap; }
+    .btn-primary { background: var(--gradient); color: #fff; box-shadow: var(--shadow); }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+    .btn-ghost { background: var(--surface); color: var(--text); border: 1.5px solid var(--border); }
+    .btn-ghost:hover { border-color: var(--border-strong); }
+
+    nav { position: sticky; top: 0; z-index: 100; background: rgba(250,250,250,.92); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); padding: 0 24px; }
+    .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 68px; }
+    .nav-logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.15rem; color: var(--text); }
+    .nav-logo img { width: 34px; height: 34px; object-fit: contain; }
+    .logo-syd { background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .nav-back { display: inline-flex; align-items: center; gap: 6px; font-size: .875rem; font-weight: 500; color: var(--text-2); }
+    .nav-back:hover { color: var(--violet); }
+    .nav-back svg { width: 14px; height: 14px; }
+
+    .hero { padding: 64px 0 40px; }
+    .hero-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: center; }
+    .badge { display: inline-flex; align-items: center; gap: 6px; background: var(--accent-pale2); border: 1px solid #FDBA74; color: var(--accent); font-size: .75rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; padding: 5px 12px; border-radius: 100px; margin-bottom: 18px; }
+    h1 { font-size: clamp(2rem, 4.2vw, 2.9rem); font-weight: 800; line-height: 1.12; margin-bottom: 18px; }
+    h1 .hl { background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+    .hero-sub { font-size: 1.0625rem; color: var(--text-2); max-width: 520px; margin-bottom: 26px; }
+    .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+    /* Mockup preview reused from homepage style */
+    .mockup-wrapper { position: relative; border-radius: 20px; background: var(--gradient); padding: 3px; box-shadow: var(--shadow-lg); }
+    .mockup-inner { background: #fff; border-radius: 18px; overflow: hidden; }
+    .mockup-bar { background: #F4F4F5; height: 34px; display: flex; align-items: center; padding: 0 14px; gap: 7px; border-bottom: 1px solid #E4E4E7; }
+    .mockup-dot { width: 9px; height: 9px; border-radius: 50%; }
+    .mockup-viewport { padding: 0; }
+    .ms-nav { display: flex; align-items: center; justify-content: space-between; padding: 10px 14px; border-bottom: 1px solid #f0f0f0; }
+    .ms-logo { font-size: .68rem; font-weight: 800; letter-spacing: .04em; color: var(--accent); }
+    .ms-nav-links { display: flex; gap: 10px; }
+    .ms-nav-links span { font-size: .52rem; color: #888; font-weight: 500; }
+    .ms-cta-sm { font-size: .52rem; font-weight: 700; color: #fff; padding: 3px 8px; border-radius: 20px; background: var(--accent); }
+    .ms-hero { padding: 18px 14px 14px; background: linear-gradient(135deg,#FFF7ED,#FFEDD5); }
+    .ms-tag { display: inline-block; font-size: .5rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 2px 7px; border-radius: 20px; margin-bottom: 7px; background: #FFEDD5; color: var(--accent); }
+    .ms-title { font-size: 1rem; font-weight: 800; line-height: 1.2; margin-bottom: 6px; color: #1C1C1E; }
+    .ms-sub { font-size: .56rem; color: #666; line-height: 1.5; margin-bottom: 11px; }
+    .ms-btn { display: inline-block; font-size: .56rem; font-weight: 700; color: #fff; padding: 6px 13px; border-radius: 20px; background: var(--accent); }
+    .ms-cards { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 7px; padding: 12px 14px 16px; }
+    .ms-card { border-radius: 8px; padding: 9px; font-size: .5rem; font-weight: 600; background: #FFF7ED; }
+    .ms-card-img { height: 30px; border-radius: 5px; margin-bottom: 6px; }
+    .ms-card-label { font-size: .46rem; color: #888; margin-top: 3px; font-weight: 400; }
+    .mockup-caption { text-align: center; font-size: .8rem; color: var(--text-3); margin-top: 14px; font-style: italic; }
+
+    section { padding: 56px 0; }
+    .section-label { font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin-bottom: 10px; }
+    .section-title { font-size: clamp(1.6rem, 3.4vw, 2.2rem); font-weight: 700; line-height: 1.2; margin-bottom: 14px; }
+    .section-sub { font-size: 1rem; color: var(--text-2); max-width: 560px; margin-bottom: 36px; }
+
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 26px; }
+    .card-icon { width: 42px; height: 42px; border-radius: 12px; background: var(--accent-pale); display: flex; align-items: center; justify-content: center; margin-bottom: 16px; color: var(--accent); }
+    .card-icon svg { width: 22px; height: 22px; }
+    .card h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 8px; }
+    .card p { font-size: .9rem; color: var(--text-2); line-height: 1.6; }
+
+    .pain-item { display: flex; gap: 14px; align-items: flex-start; padding: 16px 0; border-bottom: 1px solid var(--border); }
+    .pain-item:last-child { border-bottom: none; }
+    .pain-icon { flex-shrink: 0; width: 30px; height: 30px; border-radius: 8px; background: #FEF2F2; color: #DC2626; display: flex; align-items: center; justify-content: center; }
+    .pain-icon svg { width: 16px; height: 16px; }
+    .pain-item p { font-size: .95rem; color: var(--text-2); }
+    .pain-item strong { color: var(--text); }
+
+    .cta-band { background: var(--gradient); border-radius: 24px; padding: 48px 40px; text-align: center; color: #fff; }
+    .cta-band h2 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; margin-bottom: 12px; }
+    .cta-band p { opacity: .9; margin-bottom: 24px; font-size: 1rem; }
+    .cta-band .btn-primary { background: #fff; color: var(--violet); box-shadow: none; }
+    .cta-band .btn-primary:hover { transform: translateY(-2px); }
+
+    .testi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    .testi-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 24px; }
+    .testi-card .stars { color: #F59E0B; font-size: .9rem; margin-bottom: 10px; }
+    .testi-card p.quote { font-size: .92rem; color: var(--text-2); margin-bottom: 14px; line-height: 1.6; }
+    .testi-author { font-size: .85rem; font-weight: 600; }
+    .testi-author a { color: var(--violet); }
+
+    footer { background: var(--text); color: rgba(255,255,255,.6); padding: 40px 24px; text-align: center; font-size: .85rem; }
+    footer a { color: rgba(255,255,255,.7); }
+    footer a:hover { color: #fff; }
+
+    @media (max-width: 860px) {
+      .hero-grid { grid-template-columns: 1fr; }
+      .grid-3 { grid-template-columns: 1fr; }
+      .testi-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="logo-icon.png" alt="AgenSyd" />
+      Agen<span class="logo-syd">Syd</span>
+    </a>
+    <a href="index.html" class="nav-back">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"/></svg>
+      Retour au site
+    </a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="badge">🍽 Spécial restaurants</span>
+      <h1>Le site web de votre <span class="hl">restaurant</span>, en ligne en 72h.</h1>
+      <p class="hero-sub">Menu digital, réservation en ligne, photos qui donnent envie, référencement local Google. Tout inclus, prix fixe, sans mauvaise surprise.</p>
+      <div class="hero-actions">
+        <a href="index.html#contact" class="btn btn-primary">
+          Démarrer mon projet
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+        </a>
+        <a href="index.html#pricing" class="btn btn-ghost">Voir les tarifs</a>
+      </div>
+    </div>
+    <div>
+      <div class="mockup-wrapper">
+        <div class="mockup-inner">
+          <div class="mockup-bar">
+            <div class="mockup-dot" style="background:#FF5F57"></div>
+            <div class="mockup-dot" style="background:#FFBD2E"></div>
+            <div class="mockup-dot" style="background:#28CA41"></div>
+          </div>
+          <div class="mockup-viewport">
+            <div class="ms-nav">
+              <div class="ms-logo">🍽 Le Bouchon Lyonnais</div>
+              <div class="ms-nav-links"><span>Menu</span><span>Réserver</span><span>Contact</span></div>
+              <div class="ms-cta-sm">Réserver</div>
+            </div>
+            <div class="ms-hero">
+              <div class="ms-tag">⭐ Restaurant lyonnais</div>
+              <div class="ms-title">La cuisine<br>du terroir.</div>
+              <div class="ms-sub">Ouvert du mardi au dimanche · 69001 Lyon</div>
+              <div class="ms-btn">Voir le menu →</div>
+            </div>
+            <div class="ms-cards">
+              <div class="ms-card"><div class="ms-card-img" style="background:linear-gradient(135deg,#FDBA74,#F97316);"></div><div>Entrées</div><div class="ms-card-label">dès 9€</div></div>
+              <div class="ms-card"><div class="ms-card-img" style="background:linear-gradient(135deg,#FB923C,#EA580C);"></div><div>Plats</div><div class="ms-card-label">dès 18€</div></div>
+              <div class="ms-card"><div class="ms-card-img" style="background:linear-gradient(135deg,#FED7AA,#FDBA74);"></div><div>Desserts</div><div class="ms-card-label">dès 7€</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <p class="mockup-caption">Aperçu du style de rendu que nous pouvons créer pour votre restaurant — exemple de démonstration, pas un client réel.</p>
+    </div>
+  </div>
+</header>
+
+<section>
+  <div class="container">
+    <p class="section-label">Le problème</p>
+    <h2 class="section-title">Sans site, vous perdez des clients tous les jours</h2>
+    <div class="pain-item">
+      <div class="pain-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"/></svg></div>
+      <p><strong>Vos clients vous cherchent sur Google et ne vous trouvent pas.</strong> Un client qui tape « restaurant [votre ville] » tombe sur vos concurrents qui ont un site — pas sur vous.</p>
+    </div>
+    <div class="pain-item">
+      <div class="pain-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 002.25-2.25v-1.372c0-.516-.351-.966-.852-1.09l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 01-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.362-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 00-1.091-.852H4.5A2.25 2.25 0 002.25 4.5v2.25z"/></svg></div>
+      <p><strong>Le téléphone sonne pendant le coup de feu, et vous ratez des réservations.</strong> Un système de réservation en ligne encaisse les demandes même quand vous êtes en cuisine.</p>
+    </div>
+    <div class="pain-item">
+      <div class="pain-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M6.827 6.175A2.31 2.31 0 015.186 7.23c-.38.054-.757.112-1.134.175C2.999 7.58 2.25 8.507 2.25 9.574V18a2.25 2.25 0 002.25 2.25h15A2.25 2.25 0 0021.75 18V9.574c0-1.067-.75-1.994-1.802-2.169a47.865 47.865 0 00-1.134-.175 2.31 2.31 0 01-1.64-1.055l-.822-1.316a2.192 2.192 0 00-1.736-1.039 48.774 48.774 0 00-5.232 0 2.192 2.192 0 00-1.736 1.039l-.821 1.316z"/></svg></div>
+      <p><strong>Une photo floue prise au téléphone en 2019 ne donne pas envie.</strong> Un vrai design met en valeur votre cuisine et inspire confiance avant même que le client pousse la porte.</p>
+    </div>
+  </div>
+</section>
+
+<section style="background: var(--surface); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+  <div class="container">
+    <p class="section-label">Ce qui est inclus</p>
+    <h2 class="section-title">Un site pensé pour la restauration</h2>
+    <p class="section-sub">Pas un site vitrine générique — des fonctionnalités qui répondent aux besoins réels d'un restaurant.</p>
+    <div class="grid-3">
+      <div class="card">
+        <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/></svg></div>
+        <h3>Menu digital</h3>
+        <p>Votre carte toujours à jour, modifiable en 2 clics, avec vos plats du jour et vos prix — plus besoin de réimprimer.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 6.75h12M8.25 12h12m-12 5.25h12M3.75 6.75h.007v.008H3.75V6.75zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zM3.75 12h.007v.008H3.75V12zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm-.375 5.25h.007v.008H3.75v-.008zm.375 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"/></svg></div>
+        <h3>Réservation en ligne</h3>
+        <p>Vos clients réservent une table 24h/24, même fermé — vous recevez la demande directement par email ou WhatsApp.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15.75l5.159-5.159a2.25 2.25 0 013.182 0l5.159 5.159m-1.5-1.5l1.409-1.409a2.25 2.25 0 013.182 0l2.909 2.909M18 10.5h.008v.008H18V10.5zm-12 9h12a2.25 2.25 0 002.25-2.25V6.75A2.25 2.25 0 0018 4.5H6a2.25 2.25 0 00-2.25 2.25v10.5A2.25 2.25 0 006 19.5z"/></svg></div>
+        <h3>Galerie photos</h3>
+        <p>Vos plats, votre salle, votre équipe — mis en valeur avec un design professionnel qui inspire confiance.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 11-6 0 3 3 0 016 0z"/><path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1115 0z"/></svg></div>
+        <h3>Référencement local</h3>
+        <p>Votre restaurant apparaît quand on cherche « restaurant » + votre ville — optimisé pour Google Maps et la recherche locale.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25"/></svg></div>
+        <h3>Responsive mobile</h3>
+        <p>7 clients sur 10 vous trouvent depuis leur téléphone en marchant dans la rue — votre site s'adapte parfaitement.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M7.5 8.25h9m-9 3H12m-9.75 1.51c0 1.6 1.123 2.994 2.707 3.227 1.129.166 2.27.293 3.423.379.35.026.67.21.865.501L12 21l2.755-4.133a1.14 1.14 0 01.865-.501 48.172 48.172 0 003.423-.379c1.584-.233 2.707-1.626 2.707-3.228V6.741c0-1.602-1.123-2.995-2.707-3.228A48.394 48.394 0 0012 3c-2.392 0-4.744.175-7.043.513C3.373 3.746 2.25 5.14 2.25 6.741v6.018z"/></svg></div>
+        <h3>Formulaire de contact</h3>
+        <p>Questions, demandes de groupe, privatisation — un formulaire simple qui vous envoie chaque message directement.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <p class="section-label">Ils nous font confiance</p>
+    <h2 class="section-title">Des commerçants qui ont fait le choix AgenSyd</h2>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote">"Livré en 72h comme promis, aucune mauvaise surprise. Le site tourne parfaitement et on nous contacte directement depuis le formulaire."</p>
+        <p class="testi-author">David — <a href="https://www.kessefart.com/" target="_blank" rel="noopener">Kessef Art</a></p>
+      </div>
+      <div class="testi-card">
+        <div class="stars">★★★★★</div>
+        <p class="quote">"Design pro, réactif, et un accompagnement au top du début à la fin. Exactement ce dont on avait besoin pour se lancer sérieusement."</p>
+        <p class="testi-author">Salomé — <a href="https://www.sheisfit.fr/" target="_blank" rel="noopener">She Is Fit</a></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="cta-band">
+      <h2>Votre restaurant mérite un vrai site.</h2>
+      <p>Formulaire aujourd'hui, site en ligne en 72h. Prix fixe, tout inclus.</p>
+      <a href="index.html#contact" class="btn btn-primary">Démarrer mon projet</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>© 2025 SYD INVEST — AgenSyd. Tous droits réservés. &nbsp;|&nbsp; <a href="mentions-legales.html">Mentions légales</a> &nbsp;|&nbsp; <a href="cgu.html">CGV</a></p>
+</footer>
+
+</body>
+</html>
