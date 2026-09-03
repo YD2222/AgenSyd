@@ -683,8 +683,15 @@
       letter-spacing: -.03em; color: var(--text);
     }
     .pricing-price sup { font-size: 1.2rem; vertical-align: top; margin-top: 6px; font-weight: 600; }
-    .pricing-billing { font-size: .85rem; color: var(--text-3); margin-bottom: 20px; }
+    .pricing-billing { font-size: .85rem; color: var(--text-3); margin-bottom: 8px; }
+    .pricing-monthly {
+      display: inline-flex; align-items: center; gap: 5px;
+      font-size: .8rem; color: var(--violet); font-weight: 600;
+      background: var(--violet-pale); border-radius: 100px;
+      padding: 4px 10px; margin-bottom: 20px;
+    }
     .pricing-desc { font-size: .9rem; color: var(--text-2); margin-bottom: 24px; line-height: 1.6; }
+    .pricing-note { text-align: center; font-size: .85rem; color: var(--text-3); margin-top: 36px; }
     .pricing-divider { height: 1px; background: var(--border); margin-bottom: 24px; }
     .pricing-features { list-style: none; display: flex; flex-direction: column; gap: 12px; margin-bottom: 28px; }
     .pricing-features li {
@@ -1408,6 +1415,7 @@
         <p class="pricing-plan">Essentiel</p>
         <div class="pricing-price"><sup>€</sup>1199</div>
         <p class="pricing-billing">paiement unique · hébergement 1 an inclus</p>
+        <p class="pricing-monthly">💳 Ou dès 89€/mois sur 12 mois</p>
         <p class="pricing-desc">La vitrine idéale pour les commerces qui veulent être trouvés sur Google et donner une première impression professionnelle.</p>
         <div class="pricing-divider"></div>
         <ul class="pricing-features" aria-label="Fonctionnalités incluses">
@@ -1445,6 +1453,7 @@
         <p class="pricing-plan">Pro</p>
         <div class="pricing-price"><sup>€</sup>1499</div>
         <p class="pricing-billing">paiement unique · hébergement 2 ans inclus</p>
+        <p class="pricing-monthly">💳 Ou dès 119€/mois sur 12 mois</p>
         <p class="pricing-desc">Pour les commerces ambitieux qui veulent un site complet, une prise de réservation en ligne et un vrai référencement Google.</p>
         <div class="pricing-divider"></div>
         <ul class="pricing-features" aria-label="Fonctionnalités incluses">
@@ -1485,6 +1494,7 @@
         <p class="pricing-plan">E-commerce</p>
         <div class="pricing-price"><sup>€</sup>1999</div>
         <p class="pricing-billing">paiement unique · hébergement 2 ans inclus</p>
+        <p class="pricing-monthly">💳 Ou dès 159€/mois sur 12 mois</p>
         <p class="pricing-desc">Pour vendre vos produits en ligne. Boutique complète, paiement sécurisé, gestion des commandes. Tout est prêt.</p>
         <div class="pricing-divider"></div>
         <ul class="pricing-features" aria-label="Fonctionnalités incluses">
@@ -1520,6 +1530,7 @@
         <a href="#contact" class="btn btn-ghost pricing-btn">Choisir E-commerce</a>
       </div>
     </div>
+    <p class="pricing-note reveal">💳 Paiement en mensualités disponible sur les 3 formules : un acompte de démarrage puis des mensualités sur 12 mois minimum. Détails et simulation sur simple demande.</p>
   </div>
 </section>
 
