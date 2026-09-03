@@ -322,13 +322,12 @@
       box-shadow: 0 1px 0 var(--border);
     }
     .nav-inner {
-      display: grid; grid-template-columns: 1fr auto 1fr; align-items: center;
-      column-gap: 24px;
+      position: relative;
       height: 64px;
     }
-    .nav-logo { justify-self: start; }
-    .nav-links { justify-self: center; }
-    .nav-cta { justify-self: end; }
+    .nav-logo { position: absolute; left: 0; top: 50%; transform: translateY(-50%); }
+    .nav-links { position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); }
+    .nav-cta { position: absolute; right: 0; top: 50%; transform: translateY(-50%); }
     .nav-logo {
       display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.125rem;
     }
