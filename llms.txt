@@ -1,0 +1,19 @@
+# AgenSyd
+
+> Agence web française. Crée sites vitrines et e-commerce pour petits commerces (hôtels, restaurants, spas, bars). Livraison 72h. Formules tout inclus : hébergement, maintenance, design. À partir de 1199€.
+
+Basée à Lyon (45 boulevard des Belges, 69006). Contact : contact@agensyd.fr / +33 6 98 31 28 55. Raison sociale : SYD INVEST, SIRET 104 059 954 00012.
+
+## Pages
+
+- [Accueil](https://www.agensyd.fr/) : présentation offre, formules, tarifs
+- [Site web rapide](https://www.agensyd.fr/site-web-rapide.html) : offre site en 72h
+- [Abonnement site web](https://www.agensyd.fr/abonnement-site-web.html) : formule abonnement mensuel
+- [Agence web Lyon](https://www.agensyd.fr/agence-web-lyon.html) : page locale Lyon
+- [Restaurants](https://www.agensyd.fr/restaurants.html) : offre sites pour restaurants
+- [Hôtels](https://www.agensyd.fr/hotels.html) : offre sites pour hôtels
+- [Spas](https://www.agensyd.fr/spas.html) : offre sites pour spas
+
+## À propos
+
+AgenSyd cible petits commerces français (hôtellerie, restauration, bien-être). Différenciateur : délai 72h, prix fixe, sans engagement caché.
