@@ -720,6 +720,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .pricing-features li svg { width: 16px; height: 16px; color: var(--violet); flex-shrink: 0; margin-top: 2px; }
     .pricing-btn { width: 100%; justify-content: center; }
 
+    /* ─── Agency band ─── */
+    .hero-agency-link { margin-top: 20px; font-size: .9rem; color: var(--text-2); }
+    .hero-agency-link a { color: var(--violet); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+    #agencies { padding: 80px 0; background: var(--surface-2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+    .agency-inner { display: grid; grid-template-columns: 1.1fr 1fr; gap: 56px; align-items: center; }
+    .agency-inner .section-title { text-align: left; margin-bottom: 16px; }
+    .agency-inner .section-sub { margin: 0 0 28px; }
+    .agency-points { list-style: none; display: flex; flex-direction: column; gap: 14px; }
+    .agency-points li { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 16px 18px; font-size: .95rem; color: var(--text-2); line-height: 1.55; }
+    .agency-points strong { display: block; color: var(--text-1, #18181B); margin-bottom: 2px; }
+    @media (max-width: 860px) { .agency-inner { grid-template-columns: 1fr; gap: 32px; } }
     /* ─── Testimonials ─── */
     #testimonials {
       padding: 100px 0;
@@ -947,7 +958,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <li><a href="#pricing">Tarifs</a></li>
         <li><a href="#testimonials">Avis clients</a></li>
         <li><a href="#faq">FAQ</a></li>
-        <li><a href="sous-traitance.html">Pour les agences</a></li>
+        <li><a href="sous-traitance.html">Sous-traitance agences</a></li>
       </ul>
       <div class="nav-cta">
         <a href="tel:+33698312855" class="btn btn-ghost">Nous appeler</a>
@@ -969,7 +980,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a href="#pricing" onclick="closeMobile()">Tarifs</a>
   <a href="#testimonials" onclick="closeMobile()">Avis clients</a>
   <a href="#faq" onclick="closeMobile()">FAQ</a>
-  <a href="sous-traitance.html" onclick="closeMobile()">Pour les agences</a>
+  <a href="sous-traitance.html" onclick="closeMobile()">Sous-traitance agences</a>
   <a href="#contact" class="btn btn-primary" onclick="closeMobile()">Démarrer mon projet</a>
   <a href="tel:+33698312855" class="btn btn-ghost" onclick="closeMobile()">Nous appeler</a>
 </nav>
@@ -1001,6 +1012,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           </a>
           <a href="#pricing" class="btn btn-ghost">Voir les tarifs</a>
         </div>
+        <p class="hero-agency-link reveal reveal-delay-3">Vous êtes une agence&nbsp;? <a href="sous-traitance.html">Sous-traitez vos sites chez AgenSyd, en marque blanche&nbsp;&rarr;</a></p>
         <div class="hero-social-proof reveal reveal-delay-4">
           <div class="hero-avatars" aria-hidden="true">
             <span style="background:linear-gradient(135deg,#7C3AED,#2563EB)">ML</span>
@@ -1207,6 +1219,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     </div>
   </div>
 </div>
+
+<!-- ─── AGENCIES / SOUS-TRAITANCE ─── -->
+<section id="agencies" aria-labelledby="agencies-title">
+  <div class="container agency-inner">
+    <div>
+      <p class="section-label">Pour les agences et freelances</p>
+      <h2 class="section-title" id="agencies-title">Sous-traitez la production de vos sites chez AgenSyd.</h2>
+      <p class="section-sub">Agence web surchargée&nbsp;? Vous vendez le site à votre client, nous le produisons en marque blanche. Votre client ne voit que votre agence.</p>
+      <a href="sous-traitance.html" class="btn btn-primary">Découvrir la sous-traitance</a>
+    </div>
+    <ul class="agency-points">
+      <li><strong>Marque blanche</strong>Aucun contact avec votre client final, aucune mention d'AgenSyd.</li>
+      <li><strong>Capacité en plus, sans recruter</strong>Vous absorbez les pics de commandes sans embaucher.</li>
+      <li><strong>Prix et périmètre écrits avant démarrage</strong>Tarif partenaire sur demande, selon le périmètre du projet.</li>
+    </ul>
+  </div>
+</section>
 
 <!-- ─── WHY AGENSYD ─── -->
 <section id="why" aria-labelledby="why-title">
@@ -1850,7 +1879,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li><a href="site-web-rapide.html">Site web rapide</a></li>
           <li><a href="abonnement-site-web.html">Paiement en mensualités</a></li>
           <li><a href="agence-web-lyon.html">Agence web Lyon</a></li>
-          <li><a href="sous-traitance.html">Sous-traitance pour agences</a></li>
+          <li><a href="sous-traitance.html">Sous-traitance agences</a></li>
           <li><a href="#how">Comment ça marche</a></li>
         </ul>
       </div>
