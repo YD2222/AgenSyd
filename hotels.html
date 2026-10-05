@@ -53,17 +53,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
-      --brand: #1E3CFF; --brand-light: #4B63FF; --brand-pale: #E4E8FF;
-      --sky: #9FB0FF; --sky-light: #B9C6FF; --sky-pale: #E9ECFF;
-      --gradient: #1E3CFF;
-      --gradient-soft: #E4E8FF;
-      --bg: #F4F1EA; --surface: #FBF9F4; --surface-2: #EDE8DD;
-      --border: #DDD8CC; --border-strong: #C9C3B3;
-      --text: #0A0A0A; --text-2: #4A4A45; --text-3: #8A867B;
+      --brand: #2A4BFF; --brand-light: #4D68FF; --brand-pale: #E8ECFF;
+      --sky: #B7C2FF; --sky-light: #CBD3FF; --sky-pale: #EEF1FF;
+      --gradient: #2A4BFF;
+      --gradient-soft: #E8ECFF;
+      --bg: #FFFFFF; --surface: #FFFFFF; --surface-2: #F5F5F5;
+      --border: #E6E6E6; --border-strong: #CFCFCF;
+      --text: #0A0A0A; --text-2: #525252; --text-3: #9A9A9A;
       --radius: 16px; --radius-sm: 10px;
-      --shadow: 0 4px 16px rgba(30,60,255,.08), 0 2px 6px rgba(0,0,0,.04);
-      --shadow-lg: 0 20px 60px rgba(30,60,255,.14), 0 8px 24px rgba(0,0,0,.06);
-      --accent: #1D4ED8; --accent-pale: #EFF6FF; --accent-pale2: #E9ECFF;
+      --shadow: 0 4px 16px rgba(42,75,255,.08), 0 2px 6px rgba(0,0,0,.04);
+      --shadow-lg: 0 20px 60px rgba(42,75,255,.14), 0 8px 24px rgba(0,0,0,.06);
+      --accent: #1D4ED8; --accent-pale: #EFF6FF; --accent-pale2: #EEF1FF;
     }
     html { scroll-behavior: smooth; font-size: 16px; }
     body { font-family: 'DM Sans', 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
@@ -95,7 +95,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
     .mockup-wrapper { position: relative; border-radius: 20px; background: var(--gradient); padding: 3px; box-shadow: var(--shadow-lg); }
     .mockup-inner { background: #fff; border-radius: 18px; overflow: hidden; }
-    .mockup-bar { background: #F4F4F5; height: 34px; display: flex; align-items: center; padding: 0 14px; gap: 7px; border-bottom: 1px solid #DDD8CC; }
+    .mockup-bar { background: #F4F4F5; height: 34px; display: flex; align-items: center; padding: 0 14px; gap: 7px; border-bottom: 1px solid #E6E6E6; }
     .mockup-dot { width: 9px; height: 9px; border-radius: 50%; }
     .mockup-viewport { padding: 0; }
     .ms-nav { display: flex; align-items: center; justify-content: space-between; padding: 10px 14px; border-bottom: 1px solid #f0f0f0; }
@@ -103,8 +103,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .ms-nav-links { display: flex; gap: 10px; }
     .ms-nav-links span { font-size: .52rem; color: #888; font-weight: 500; }
     .ms-cta-sm { font-size: .52rem; font-weight: 700; color: #fff; padding: 3px 8px; border-radius: 20px; background: var(--accent); }
-    .ms-hero { padding: 18px 14px 14px; background: linear-gradient(135deg,#EFF6FF,#E9ECFF); }
-    .ms-tag { display: inline-block; font-size: .5rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 2px 7px; border-radius: 20px; margin-bottom: 7px; background: #E9ECFF; color: var(--accent); }
+    .ms-hero { padding: 18px 14px 14px; background: linear-gradient(135deg,#EFF6FF,#EEF1FF); }
+    .ms-tag { display: inline-block; font-size: .5rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; padding: 2px 7px; border-radius: 20px; margin-bottom: 7px; background: #EEF1FF; color: var(--accent); }
     .ms-title { font-size: 1rem; font-weight: 800; line-height: 1.2; margin-bottom: 6px; color: #1E3A8A; }
     .ms-sub { font-size: .56rem; color: #666; line-height: 1.5; margin-bottom: 11px; }
     .ms-btn { display: inline-block; font-size: .56rem; font-weight: 700; color: #fff; padding: 6px 13px; border-radius: 20px; background: var(--accent); }
@@ -156,15 +156,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .testi-grid { grid-template-columns: 1fr; }
     }
   
-    /* ─── Palette : bleu électrique + crème ─── */
-    .hero { background: var(--brand); color: var(--bg); padding: 64px 0 56px; }
-    .hero h1 { color: var(--bg); }
-    .hero h1 .hl { background: none; -webkit-text-fill-color: #CFD6FF; color: #CFD6FF; }
-    .hero .hero-sub { color: rgba(244,241,234,.86); }
-    .hero .badge { background: rgba(244,241,234,.14); border-color: rgba(244,241,234,.4); color: var(--bg); }
-    .hero .btn-primary { background: var(--bg); color: var(--brand); box-shadow: none; }
-    .hero .btn-ghost { background: transparent; color: var(--bg); border-color: rgba(244,241,234,.55); }
-    .hero .mockup-wrapper { background: var(--bg); box-shadow: none; }
+    /* ─── Palette : blanc, noir, touche bleue ─── */
     .btn-primary { box-shadow: none; }
 </style>
 </head>
@@ -223,7 +215,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div class="ms-btn">Voir les chambres →</div>
             </div>
             <div class="ms-cards">
-              <div class="ms-card"><div class="ms-card-img" style="background:linear-gradient(135deg,#93C5FD,#B9C6FF);"></div><div>Standard</div><div class="ms-card-label">dès 89€/nuit</div></div>
+              <div class="ms-card"><div class="ms-card-img" style="background:linear-gradient(135deg,#93C5FD,#CBD3FF);"></div><div>Standard</div><div class="ms-card-label">dès 89€/nuit</div></div>
               <div class="ms-card"><div class="ms-card-img" style="background:#60A5FA;"></div><div>Supérieure</div><div class="ms-card-label">dès 129€/nuit</div></div>
               <div class="ms-card"><div class="ms-card-img" style="background:linear-gradient(135deg,#BFDBFE,#93C5FD);"></div><div>Suite</div><div class="ms-card-label">dès 199€/nuit</div></div>
             </div>

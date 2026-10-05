@@ -229,27 +229,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     /* ─── Reset & Base ─── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
-      --brand: #1E3CFF;
-      --brand-light: #4B63FF;
-      --brand-pale: #E4E8FF;
-      --sky: #9FB0FF;
-      --sky-light: #B9C6FF;
-      --sky-pale: #E9ECFF;
-      --gradient: #1E3CFF;
-      --gradient-soft: #E4E8FF;
-      --bg: #F4F1EA;
-      --surface: #FBF9F4;
-      --surface-2: #EDE8DD;
-      --border: #DDD8CC;
-      --border-strong: #C9C3B3;
+      --brand: #2A4BFF;
+      --brand-light: #4D68FF;
+      --brand-pale: #E8ECFF;
+      --sky: #B7C2FF;
+      --sky-light: #CBD3FF;
+      --sky-pale: #EEF1FF;
+      --gradient: #2A4BFF;
+      --gradient-soft: #E8ECFF;
+      --bg: #FFFFFF;
+      --surface: #FFFFFF;
+      --surface-2: #F5F5F5;
+      --border: #E6E6E6;
+      --border-strong: #CFCFCF;
       --text: #0A0A0A;
-      --text-2: #4A4A45;
-      --text-3: #8A867B;
+      --text-2: #525252;
+      --text-3: #9A9A9A;
       --radius: 16px;
       --radius-sm: 10px;
       --shadow-sm: 0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
-      --shadow: 0 4px 16px rgba(30,60,255,.08), 0 2px 6px rgba(0,0,0,.04);
-      --shadow-lg: 0 20px 60px rgba(30,60,255,.14), 0 8px 24px rgba(0,0,0,.06);
+      --shadow: 0 4px 16px rgba(42,75,255,.08), 0 2px 6px rgba(0,0,0,.04);
+      --shadow-lg: 0 20px 60px rgba(42,75,255,.14), 0 8px 24px rgba(0,0,0,.06);
     }
     html { scroll-behavior: smooth; font-size: 16px; }
     body {
@@ -310,9 +310,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .btn:focus-visible { outline: 2px solid var(--brand); outline-offset: 3px; }
     .btn-primary {
       background: var(--gradient); color: #fff;
-      box-shadow: 0 4px 14px rgba(30,60,255,.35);
+      box-shadow: 0 4px 14px rgba(42,75,255,.35);
     }
-    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(30,60,255,.42); }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(42,75,255,.42); }
     .btn-primary:active { transform: translateY(0); }
     .btn-ghost {
       background: transparent; color: var(--text);
@@ -327,7 +327,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       transition: background .3s, box-shadow .3s;
     }
     #navbar.scrolled {
-      background: rgba(244,241,234,.92);
+      background: rgba(255,255,255,.92);
       backdrop-filter: blur(20px) saturate(180%);
       -webkit-backdrop-filter: blur(20px) saturate(180%);
       box-shadow: 0 1px 0 var(--border);
@@ -475,7 +475,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
     .mockup-bar {
       background: #F4F4F5; height: 36px; display: flex; align-items: center;
-      padding: 0 14px; gap: 7px; border-bottom: 1px solid #DDD8CC;
+      padding: 0 14px; gap: 7px; border-bottom: 1px solid #E6E6E6;
       flex-shrink: 0;
     }
     .mockup-dot { width: 10px; height: 10px; border-radius: 50%; }
@@ -533,7 +533,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       border-radius: 100px; padding: 7px 16px;
       display: flex; align-items: center; gap: 6px;
       font-size: .8rem; font-weight: 600; color: var(--brand);
-      box-shadow: 0 4px 14px rgba(30,60,255,.15);
+      box-shadow: 0 4px 14px rgba(42,75,255,.15);
       white-space: nowrap;
     }
     .pulse {
@@ -661,7 +661,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       display: flex; align-items: center; justify-content: center;
       margin: 0 auto 20px;
       position: relative; z-index: 1;
-      box-shadow: 0 4px 14px rgba(30,60,255,.3);
+      box-shadow: 0 4px 14px rgba(42,75,255,.3);
     }
     .how-step-title { font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
     .how-step-desc { font-size: .875rem; color: var(--text-2); line-height: 1.6; }
@@ -843,7 +843,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       font-size: .9375rem; color: var(--text);
       transition: border-color .2s, box-shadow .2s;
     }
-    .form-control:focus { outline: none; border-color: var(--brand); box-shadow: 0 0 0 3px rgba(30,60,255,.12); }
+    .form-control:focus { outline: none; border-color: var(--brand); box-shadow: 0 0 0 3px rgba(42,75,255,.12); }
     .form-control::placeholder { color: var(--text-3); }
     .form-control.error { border-color: #EF4444; }
     .form-error { font-size: .78rem; color: #EF4444; margin-top: 2px; display: none; }
@@ -933,22 +933,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .hero-actions .btn { width: 100%; justify-content: center; }
     }
   
-    /* ─── Palette test : bleu électrique + crème ─── */
-    #navbar { background: var(--bg); box-shadow: 0 1px 0 var(--border); }
-    #hero { background: var(--brand); color: var(--bg); }
-    #hero .hero-title { color: var(--bg); }
-    #hero .hero-title .highlight { background: none; -webkit-text-fill-color: #CFD6FF; color: #CFD6FF; }
-    #hero .hero-sub, #hero .hero-proof-text, #hero .hero-agency-link { color: rgba(244,241,234,.86); }
-    #hero .hero-proof-text strong { color: var(--bg); }
-    #hero .hero-agency-link a { color: var(--bg); }
-    #hero .btn-primary { background: var(--bg); color: var(--brand); box-shadow: none; }
-    #hero .btn-primary:hover { background: #fff; box-shadow: none; }
-    #hero .btn-ghost { color: var(--bg); border-color: rgba(244,241,234,.55); }
-    #hero .btn-ghost:hover { background: rgba(244,241,234,.12); border-color: var(--bg); color: var(--bg); }
-    #hero .hero-avatars span { border-color: var(--brand); }
-    #hero .mockup-wrapper { background: var(--bg); box-shadow: none; }
-    .btn-primary { box-shadow: none; }
-    .btn-primary:hover { box-shadow: none; }
+    /* ─── Palette : blanc, noir, touche bleue ─── */
+    .btn-primary, .btn-primary:hover { box-shadow: none; }
 </style>
 </head>
 <body>
@@ -1032,9 +1018,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <p class="hero-agency-link reveal reveal-delay-3">Vous êtes une agence&nbsp;? <a href="sous-traitance.html">Sous-traitez vos sites chez AgenSyd, en marque blanche&nbsp;&rarr;</a></p>
         <div class="hero-social-proof reveal reveal-delay-4">
           <div class="hero-avatars" aria-hidden="true">
-            <span style="background:#1E3CFF">ML</span>
-            <span style="background:#9FB0FF">SA</span>
-            <span style="background:#9FB0FF">PD</span>
+            <span style="background:#2A4BFF">ML</span>
+            <span style="background:#B7C2FF">SA</span>
+            <span style="background:#B7C2FF">PD</span>
             <span style="background:#0A0A0A">CL</span>
           </div>
           <p class="hero-proof-text">
@@ -1050,7 +1036,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div class="mockup-dot" style="background:#FF5F57"></div>
               <div class="mockup-dot" style="background:#FFBD2E"></div>
               <div class="mockup-dot" style="background:#28CA41"></div>
-              <div style="flex:1;height:16px;background:#DDD8CC;border-radius:100px;margin-left:8px;"></div>
+              <div style="flex:1;height:16px;background:#E6E6E6;border-radius:100px;margin-left:8px;"></div>
             </div>
             <div class="mockup-viewport">
 
@@ -1125,15 +1111,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   </div>
                   <div class="ms-cta-sm" style="background:#1D4ED8;">Réserver</div>
                 </div>
-                <div class="ms-hero" style="background:linear-gradient(135deg,#EFF6FF,#E9ECFF);">
-                  <div class="ms-tag" style="background:#E9ECFF;color:#1D4ED8;">★★★ Hôtel Bordeaux</div>
+                <div class="ms-hero" style="background:linear-gradient(135deg,#EFF6FF,#EEF1FF);">
+                  <div class="ms-tag" style="background:#EEF1FF;color:#1D4ED8;">★★★ Hôtel Bordeaux</div>
                   <div class="ms-title" style="color:#1E3A8A;">Un séjour<br>inoubliable.</div>
                   <div class="ms-sub">20 chambres · Petit-déjeuner inclus · Centre-ville</div>
                   <div class="ms-btn" style="background:#1D4ED8;">Voir les chambres →</div>
                 </div>
                 <div class="ms-cards">
                   <div class="ms-card" style="background:#EFF6FF;">
-                    <div class="ms-card-img" style="background:linear-gradient(135deg,#93C5FD,#B9C6FF);"></div>
+                    <div class="ms-card-img" style="background:linear-gradient(135deg,#93C5FD,#CBD3FF);"></div>
                     <div>Standard</div><div class="ms-card-label">dès 89€/nuit</div>
                   </div>
                   <div class="ms-card" style="background:#EFF6FF;">
@@ -1663,7 +1649,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
         <blockquote class="testi-quote">"Je voulais un site qui parle aux femmes et donne envie de pousser la porte de mon club. AgenSyd a tout compris sans que j'aie besoin d'expliquer 10 fois. En 72h j'avais un site moderne, avec les réservations en ligne. Mes adhérentes adorent."</blockquote>
         <div class="testi-author">
-          <div class="testi-avatar" aria-hidden="true" style="background:#1E3CFF">S</div>
+          <div class="testi-avatar" aria-hidden="true" style="background:#2A4BFF">S</div>
           <div>
             <p class="testi-name">Salom&eacute;</p>
             <p class="testi-role">Fondatrice, <a href="https://www.sheisfit.fr/" target="_blank" rel="noopener" style="color:var(--brand);font-weight:600;">She Is Fit</a> · Club de sport 100% féminin · Lyon</p>
