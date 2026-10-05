@@ -229,27 +229,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     /* ─── Reset & Base ─── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
-      --brand: #2A4BFF;
-      --brand-light: #4D68FF;
-      --brand-pale: #E8ECFF;
-      --sky: #B7C2FF;
-      --sky-light: #CBD3FF;
-      --sky-pale: #EEF1FF;
-      --gradient: #2A4BFF;
-      --gradient-soft: #E8ECFF;
-      --bg: #FFFFFF;
-      --surface: #FFFFFF;
-      --surface-2: #F5F5F5;
-      --border: #E6E6E6;
-      --border-strong: #CFCFCF;
-      --text: #0A0A0A;
-      --text-2: #525252;
-      --text-3: #9A9A9A;
+      --brand: #4D6BFF;
+      --brand-light: #7088FF;
+      --brand-pale: #1A2260;
+      --sky: #8FA0FF;
+      --sky-light: #B3BFFF;
+      --sky-pale: #1A2260;
+      --gradient: #4D6BFF;
+      --gradient-soft: #1A2260;
+      --bg: #0B1030;
+      --surface: #131A45;
+      --surface-2: #1A2260;
+      --border: #232B63;
+      --border-strong: #34408A;
+      --text: #F5F6FF;
+      --text-2: #A9B1E0;
+      --text-3: #7C85BD;
       --radius: 16px;
       --radius-sm: 10px;
       --shadow-sm: 0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
-      --shadow: 0 4px 16px rgba(42,75,255,.08), 0 2px 6px rgba(0,0,0,.04);
-      --shadow-lg: 0 20px 60px rgba(42,75,255,.14), 0 8px 24px rgba(0,0,0,.06);
+      --shadow: 0 4px 16px rgba(77,107,255,.08), 0 2px 6px rgba(0,0,0,.04);
+      --shadow-lg: 0 20px 60px rgba(77,107,255,.14), 0 8px 24px rgba(0,0,0,.06);
     }
     html { scroll-behavior: smooth; font-size: 16px; }
     body {
@@ -310,9 +310,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .btn:focus-visible { outline: 2px solid var(--brand); outline-offset: 3px; }
     .btn-primary {
       background: var(--gradient); color: #fff;
-      box-shadow: 0 4px 14px rgba(42,75,255,.35);
+      box-shadow: 0 4px 14px rgba(77,107,255,.35);
     }
-    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(42,75,255,.42); }
+    .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(77,107,255,.42); }
     .btn-primary:active { transform: translateY(0); }
     .btn-ghost {
       background: transparent; color: var(--text);
@@ -533,7 +533,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       border-radius: 100px; padding: 7px 16px;
       display: flex; align-items: center; gap: 6px;
       font-size: .8rem; font-weight: 600; color: var(--brand);
-      box-shadow: 0 4px 14px rgba(42,75,255,.15);
+      box-shadow: 0 4px 14px rgba(77,107,255,.15);
       white-space: nowrap;
     }
     .pulse {
@@ -661,7 +661,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       display: flex; align-items: center; justify-content: center;
       margin: 0 auto 20px;
       position: relative; z-index: 1;
-      box-shadow: 0 4px 14px rgba(42,75,255,.3);
+      box-shadow: 0 4px 14px rgba(77,107,255,.3);
     }
     .how-step-title { font-size: 1rem; font-weight: 700; margin-bottom: 8px; }
     .how-step-desc { font-size: .875rem; color: var(--text-2); line-height: 1.6; }
@@ -843,7 +843,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       font-size: .9375rem; color: var(--text);
       transition: border-color .2s, box-shadow .2s;
     }
-    .form-control:focus { outline: none; border-color: var(--brand); box-shadow: 0 0 0 3px rgba(42,75,255,.12); }
+    .form-control:focus { outline: none; border-color: var(--brand); box-shadow: 0 0 0 3px rgba(77,107,255,.12); }
     .form-control::placeholder { color: var(--text-3); }
     .form-control.error { border-color: #EF4444; }
     .form-error { font-size: .78rem; color: #EF4444; margin-top: 2px; display: none; }
@@ -932,9 +932,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .hero-actions { flex-direction: column; align-items: flex-start; }
       .hero-actions .btn { width: 100%; justify-content: center; }
     }
-  
-    /* ─── Palette : blanc, noir, touche bleue ─── */
+
+    /* ─── Pack : nuit profonde et bleu vif ─── */
     .btn-primary, .btn-primary:hover { box-shadow: none; }
+    .mobile-menu { background: var(--bg); }
+    #navbar.scrolled { background: rgba(11,16,48,.9); }
+    .pricing-card.featured, .contact-form, .mockup-badge-floating { background: var(--surface); }
+    .hero-avatars span { border-color: var(--bg); }
+    footer { background: #060A22; }
+    #agencies { background: #F5F6FF; border-color: #D5DAF5; }
+    #agencies .section-label { color: #3049E0; }
+    #agencies .section-title, #agencies .agency-points strong { color: #0B1030; }
+    #agencies .section-sub, #agencies .agency-points li { color: #3A4275; }
+    #agencies .agency-points li { background: #fff; border-color: #D5DAF5; }
 </style>
 </head>
 <body>
