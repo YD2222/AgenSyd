@@ -53,6 +53,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
+      --electric: #1E3CFF;
       --brand: #4D6BFF; --brand-light: #7088FF; --brand-pale: #1A2260;
       --sky: #8FA0FF; --sky-light: #B3BFFF; --sky-pale: #1A2260;
       --gradient: #4D6BFF;
@@ -159,6 +160,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     /* ─── Pack : nuit profonde et bleu vif ─── */
     .btn-primary { box-shadow: none; }
     footer { background: #060A22; }
+
+    /* ─── Bleu électrique : couleur secondaire ─── */
+    .btn-ghost { border-color: var(--electric); }
+    .btn-ghost:hover { background: var(--electric); border-color: var(--electric); color: #fff; }
+    .cta-band { background: var(--electric); }
+    .cta-band .btn-primary { color: var(--electric); }
 </style>
 </head>
 <body>

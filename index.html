@@ -229,6 +229,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     /* ─── Reset & Base ─── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
+      --electric: #1E3CFF;
       --brand: #4D6BFF;
       --brand-light: #7088FF;
       --brand-pale: #1A2260;
@@ -940,11 +941,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .pricing-card.featured, .contact-form, .mockup-badge-floating { background: var(--surface); }
     .hero-avatars span { border-color: var(--bg); }
     footer { background: #060A22; }
-    #agencies { background: #F5F6FF; border-color: #D5DAF5; }
-    #agencies .section-label { color: #3049E0; }
-    #agencies .section-title, #agencies .agency-points strong { color: #0B1030; }
-    #agencies .section-sub, #agencies .agency-points li { color: #3A4275; }
-    #agencies .agency-points li { background: #fff; border-color: #D5DAF5; }
+
+    /* ─── Bleu électrique : couleur secondaire ─── */
+    .btn-ghost { border-color: var(--electric); }
+    .btn-ghost:hover { background: var(--electric); border-color: var(--electric); color: #fff; }
+    .cta-wrapper { background: var(--electric); }
+    #agencies { background: var(--electric); border-color: var(--electric); }
+    #agencies .section-label { color: rgba(255,255,255,.85); }
+    #agencies .section-title, #agencies .agency-points strong { color: #fff; }
+    #agencies .section-sub, #agencies .agency-points li { color: rgba(255,255,255,.88); }
+    #agencies .agency-points li { background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.28); }
+    #agencies .btn-primary { background: #fff; color: var(--electric); }
 </style>
 </head>
 <body>
