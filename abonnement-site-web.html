@@ -115,17 +115,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
-      --violet: #7C3AED; --violet-light: #8B5CF6; --violet-pale: #EDE9FE;
-      --blue: #2563EB; --blue-light: #3B82F6; --blue-pale: #DBEAFE;
-      --gradient: linear-gradient(135deg, #7C3AED 0%, #2563EB 100%);
-      --gradient-soft: linear-gradient(135deg, #EDE9FE 0%, #DBEAFE 100%);
-      --bg: #FAFAFA; --surface: #FFFFFF; --surface-2: #F5F3FF;
-      --border: #E4E4E7; --border-strong: #C4B5FD;
-      --text: #09090B; --text-2: #52525B; --text-3: #A1A1AA;
+      --brand: #1E3CFF; --brand-light: #4B63FF; --brand-pale: #E4E8FF;
+      --sky: #9FB0FF; --sky-light: #B9C6FF; --sky-pale: #E9ECFF;
+      --gradient: #1E3CFF;
+      --gradient-soft: #E4E8FF;
+      --bg: #F4F1EA; --surface: #FBF9F4; --surface-2: #EDE8DD;
+      --border: #DDD8CC; --border-strong: #C9C3B3;
+      --text: #0A0A0A; --text-2: #4A4A45; --text-3: #8A867B;
       --radius: 16px; --radius-sm: 10px;
-      --shadow: 0 4px 16px rgba(124,58,237,.08), 0 2px 6px rgba(0,0,0,.04);
-      --shadow-lg: 0 20px 60px rgba(124,58,237,.14), 0 8px 24px rgba(0,0,0,.06);
-      --accent: #7C3AED; --accent-pale: #F5F3FF; --accent-pale2: #EDE9FE;
+      --shadow: 0 4px 16px rgba(30,60,255,.08), 0 2px 6px rgba(0,0,0,.04);
+      --shadow-lg: 0 20px 60px rgba(30,60,255,.14), 0 8px 24px rgba(0,0,0,.06);
+      --accent: #1E3CFF; --accent-pale: #EDE8DD; --accent-pale2: #E4E8FF;
     }
     html { scroll-behavior: smooth; font-size: 16px; }
     body { font-family: 'DM Sans', 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
@@ -144,12 +144,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .nav-logo img { width: 34px; height: 34px; object-fit: contain; }
     .logo-syd { background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
     .nav-back { display: inline-flex; align-items: center; gap: 6px; font-size: .875rem; font-weight: 500; color: var(--text-2); }
-    .nav-back:hover { color: var(--violet); }
+    .nav-back:hover { color: var(--brand); }
     .nav-back svg { width: 14px; height: 14px; }
 
     .hero { padding: 64px 0 40px; }
     .hero-grid { display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: center; }
-    .badge { display: inline-flex; align-items: center; gap: 6px; background: var(--accent-pale2); border: 1px solid #C4B5FD; color: var(--accent); font-size: .75rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; padding: 5px 12px; border-radius: 100px; margin-bottom: 18px; }
+    .badge { display: inline-flex; align-items: center; gap: 6px; background: var(--accent-pale2); border: 1px solid #C9C3B3; color: var(--accent); font-size: .75rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; padding: 5px 12px; border-radius: 100px; margin-bottom: 18px; }
     h1 { font-size: clamp(2rem, 4.2vw, 2.9rem); font-weight: 800; line-height: 1.12; margin-bottom: 18px; }
     h1 .hl { background: var(--gradient); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
     .hero-sub { font-size: 1.0625rem; color: var(--text-2); max-width: 520px; margin-bottom: 26px; }
@@ -158,7 +158,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     /* Mockup preview reused from homepage style */
     .mockup-wrapper { position: relative; border-radius: 20px; background: var(--gradient); padding: 3px; box-shadow: var(--shadow-lg); }
     .mockup-inner { background: #fff; border-radius: 18px; overflow: hidden; }
-    .mockup-bar { background: #F4F4F5; height: 34px; display: flex; align-items: center; padding: 0 14px; gap: 7px; border-bottom: 1px solid #E4E4E7; }
+    .mockup-bar { background: #F4F4F5; height: 34px; display: flex; align-items: center; padding: 0 14px; gap: 7px; border-bottom: 1px solid #DDD8CC; }
     .mockup-dot { width: 9px; height: 9px; border-radius: 50%; }
     .mockup-viewport { padding: 0; }
     .ms-nav { display: flex; align-items: center; justify-content: space-between; padding: 10px 14px; border-bottom: 1px solid #f0f0f0; }
@@ -199,7 +199,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .cta-band { background: var(--gradient); border-radius: 24px; padding: 48px 40px; text-align: center; color: #fff; }
     .cta-band h2 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 800; margin-bottom: 12px; }
     .cta-band p { opacity: .9; margin-bottom: 24px; font-size: 1rem; }
-    .cta-band .btn-primary { background: #fff; color: var(--violet); box-shadow: none; }
+    .cta-band .btn-primary { background: #fff; color: var(--brand); box-shadow: none; }
     .cta-band .btn-primary:hover { transform: translateY(-2px); }
 
     .testi-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
@@ -207,7 +207,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .testi-card .stars { color: #F59E0B; font-size: .9rem; margin-bottom: 10px; }
     .testi-card p.quote { font-size: .92rem; color: var(--text-2); margin-bottom: 14px; line-height: 1.6; }
     .testi-author { font-size: .85rem; font-weight: 600; }
-    .testi-author a { color: var(--violet); }
+    .testi-author a { color: var(--brand); }
 
     footer { background: var(--text); color: rgba(255,255,255,.6); padding: 40px 24px; text-align: center; font-size: .85rem; }
     footer a { color: rgba(255,255,255,.7); }
@@ -225,15 +225,26 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .step h3 { font-size: 1rem; font-weight: 700; margin-bottom: 6px; }
     .step p { font-size: .88rem; color: var(--text-2); }
     .price-card { text-align: left; }
-    .price-card .p-name { font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--violet); margin-bottom: 8px; }
+    .price-card .p-name { font-size: .8rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; color: var(--brand); margin-bottom: 8px; }
     .price-card .p-price { font-size: 2.2rem; font-weight: 800; line-height: 1; margin-bottom: 6px; }
-    .price-card .p-month { display: inline-block; font-size: .8rem; color: var(--violet); font-weight: 600; background: var(--violet-pale); border-radius: 100px; padding: 4px 10px; margin-bottom: 12px; }
+    .price-card .p-month { display: inline-block; font-size: .8rem; color: var(--brand); font-weight: 600; background: var(--brand-pale); border-radius: 100px; padding: 4px 10px; margin-bottom: 12px; }
     .faq details { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 18px 20px; margin-bottom: 10px; }
     .faq summary { font-weight: 700; cursor: pointer; }
     .faq details p { margin-top: 10px; color: var(--text-2); font-size: .93rem; }
     @media (max-width: 860px) { .steps { grid-template-columns: 1fr 1fr; } }
     @media (max-width: 520px) { .steps { grid-template-columns: 1fr; } }
-  </style>
+  
+    /* ─── Palette : bleu électrique + crème ─── */
+    .hero { background: var(--brand); color: var(--bg); padding: 64px 0 56px; }
+    .hero h1 { color: var(--bg); }
+    .hero h1 .hl { background: none; -webkit-text-fill-color: #CFD6FF; color: #CFD6FF; }
+    .hero .hero-sub { color: rgba(244,241,234,.86); }
+    .hero .badge { background: rgba(244,241,234,.14); border-color: rgba(244,241,234,.4); color: var(--bg); }
+    .hero .btn-primary { background: var(--bg); color: var(--brand); box-shadow: none; }
+    .hero .btn-ghost { background: transparent; color: var(--bg); border-color: rgba(244,241,234,.55); }
+    .hero .mockup-wrapper { background: var(--bg); box-shadow: none; }
+    .btn-primary { box-shadow: none; }
+</style>
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
@@ -289,7 +300,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="card price-card"><p class="p-name">Professionnel</p><p class="p-price">119€<span style="font-size:1rem">/mois</span></p><p class="p-month">acompte 349€</p><p>Total sur 12 mois : 1777€. Comptant : 1499€.</p></div>
       <div class="card price-card"><p class="p-name">E-commerce</p><p class="p-price">159€<span style="font-size:1rem">/mois</span></p><p class="p-month">acompte 399€</p><p>Total sur 12 mois : 2307€. Comptant : 1999€.</p></div>
     </div>
-    <p class="section-sub" style="margin-top:24px">Engagement de 12 mois ferme, précisé dans nos <a href="cgu.html" style="color:var(--violet)">conditions générales</a>.</p>
+    <p class="section-sub" style="margin-top:24px">Engagement de 12 mois ferme, précisé dans nos <a href="cgu.html" style="color:var(--brand)">conditions générales</a>.</p>
   </div>
 </section>
 <section class="faq">
