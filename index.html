@@ -730,7 +730,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .agency-inner .section-sub { margin: 0 0 28px; }
     .agency-points { list-style: none; display: flex; flex-direction: column; gap: 14px; }
     .agency-points li { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-sm); padding: 16px 18px; font-size: .95rem; color: var(--text-2); line-height: 1.55; }
-    .agency-points strong { display: block; color: var(--text-1, #18181B); margin-bottom: 2px; }
+    .agency-points strong { display: block; color: var(--text); margin-bottom: 2px; }
     @media (max-width: 860px) { .agency-inner { grid-template-columns: 1fr; gap: 32px; } }
     /* ─── Testimonials ─── */
     #testimonials {
@@ -946,16 +946,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .btn-ghost { border-color: var(--electric); }
     .btn-ghost:hover { background: var(--electric); border-color: var(--electric); color: #fff; }
     .cta-wrapper { background: var(--electric); }
-    #agencies { background: var(--electric); border-color: var(--electric); }
-    #agencies .section-label { color: rgba(255,255,255,.85); }
-    #agencies .section-title, #agencies .agency-points strong { color: #fff; }
-    #agencies .section-sub, #agencies .agency-points li { color: rgba(255,255,255,.88); }
-    #agencies .agency-points li { background: rgba(255,255,255,.12); border-color: rgba(255,255,255,.28); }
-    #agencies .btn-primary { background: #fff; color: var(--electric); }
 
-    /* ─── CTA : bleu clair ─── */
-    .btn-primary, .cta-band .btn-primary, #agencies .btn-primary { background: #4DB8FF; color: #0B1030; box-shadow: none; }
-    .btn-primary:hover, .cta-band .btn-primary:hover, #agencies .btn-primary:hover { background: #7AC9FF; color: #0B1030; box-shadow: none; }
+    /* ─── CTA : bleu électrique ─── */
+    .btn-primary { background: #1E3CFF; color: #fff; box-shadow: none; }
+    .btn-primary:hover { background: #4D6BFF; color: #fff; box-shadow: none; }
+    .cta-band .btn-primary { background: #F5F6FF; color: #1E3CFF; }
+    .cta-band .btn-primary:hover { background: #fff; color: #1E3CFF; }
 </style>
 </head>
 <body>
