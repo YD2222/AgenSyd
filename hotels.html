@@ -54,17 +54,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     :root {
       --electric: #1E3CFF;
-      --brand: #4DB8FF; --brand-light: #7AC9FF; --brand-pale: #1A2260;
-      --sky: #8FA0FF; --sky-light: #B3BFFF; --sky-pale: #1A2260;
+      --brand: #1E3CFF; --brand-light: #4D6BFF; --brand-pale: #E8EEFF;
+      --sky: #4DB8FF; --sky-light: #7AC9FF; --sky-pale: #E3F4FF;
       --gradient: #1E3CFF;
-      --gradient-soft: #1A2260;
-      --bg: #0B1030; --surface: #131A45; --surface-2: #1A2260;
-      --border: #232B63; --border-strong: #34408A;
-      --text: #F5F6FF; --text-2: #A9B1E0; --text-3: #7C85BD;
+      --gradient-soft: #E8EEFF;
+      --bg: #FFFFFF; --surface: #FFFFFF; --surface-2: #F3F7FF;
+      --border: #E1E7F5; --border-strong: #BFD0F5;
+      --text: #0A1033; --text-2: #4A5278; --text-3: #8089AD;
       --radius: 16px; --radius-sm: 10px;
-      --shadow: 0 4px 16px rgba(77,107,255,.08), 0 2px 6px rgba(0,0,0,.04);
-      --shadow-lg: 0 20px 60px rgba(77,107,255,.14), 0 8px 24px rgba(0,0,0,.06);
-      --accent: #8FA0FF; --accent-pale: #1A2260; --accent-pale2: #1A2260;
+      --shadow: 0 4px 16px rgba(30,60,255,.08), 0 2px 6px rgba(0,0,0,.04);
+      --shadow-lg: 0 20px 60px rgba(30,60,255,.14), 0 8px 24px rgba(0,0,0,.06);
+      --accent: #1E3CFF; --accent-pale: #EAF0FF; --accent-pale2: #E3F4FF;
     }
     html { scroll-behavior: smooth; font-size: 16px; }
     body { font-family: 'DM Sans', 'Inter', system-ui, sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
@@ -77,7 +77,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .btn-ghost { background: var(--surface); color: var(--text); border: 1.5px solid var(--border); }
     .btn-ghost:hover { border-color: var(--border-strong); }
 
-    nav { position: sticky; top: 0; z-index: 100; background: rgba(11,16,48,.92); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); padding: 0 24px; }
+    nav { position: sticky; top: 0; z-index: 100; background: rgba(255,255,255,.92); backdrop-filter: blur(20px); border-bottom: 1px solid var(--border); padding: 0 24px; }
     .nav-inner { max-width: 1100px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; height: 68px; }
     .nav-logo { display: flex; align-items: center; gap: 10px; font-weight: 700; font-size: 1.15rem; color: var(--text); }
     .nav-logo img { width: 42px; height: 42px; object-fit: contain; }
@@ -157,25 +157,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .testi-grid { grid-template-columns: 1fr; }
     }
 
-    /* ─── Pack : nuit profonde et bleu vif ─── */
-    .btn-primary { box-shadow: none; }
-    footer { background: #060A22; }
-
-    /* ─── Bleu électrique : couleur secondaire ─── */
-    .btn-ghost { border-color: var(--electric); }
-    .btn-ghost:hover { background: var(--electric); border-color: var(--electric); color: #fff; }
-    .cta-band { background: var(--electric); }
-    .cta-band .btn-primary { color: var(--electric); }
-
-    /* ─── CTA : bleu électrique ─── */
+    /* ─── Thème clair : bleu électrique et bleu clair ─── */
     .btn-primary { background: #1E3CFF; color: #fff; box-shadow: none; }
-    .btn-primary:hover { background: #4D6BFF; color: #fff; box-shadow: none; }
-    .cta-band .btn-primary { background: #F5F6FF; color: #1E3CFF; }
-    .cta-band .btn-primary:hover { background: #fff; color: #1E3CFF; }
-
-    /* ─── Liens et accents : bleu clair ─── */
-    .hero-title .highlight, h1 .hl { background: none; -webkit-text-fill-color: #4DB8FF; color: #4DB8FF; }
+    .btn-primary:hover { background: #0F2BE0; color: #fff; box-shadow: none; }
+    .btn-ghost { background: transparent; color: #1E3CFF; border-color: #1E3CFF; }
+    .btn-ghost:hover { background: #1E3CFF; border-color: #1E3CFF; color: #fff; }
     .logo-syd { background: linear-gradient(90deg, #1E3CFF 0%, #4DB8FF 100%); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; color: transparent; }
+    footer { background: #0A1033; }
+    h1 .hl { background: none; -webkit-text-fill-color: #1E3CFF; color: #1E3CFF; }
+    .cta-band { background: #1E3CFF; }
+    .cta-band .btn-primary { background: #4DB8FF; color: #0A1033; }
+    .cta-band .btn-primary:hover { background: #7AC9FF; color: #0A1033; }
 </style>
 </head>
 <body>
