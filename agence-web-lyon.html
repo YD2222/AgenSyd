@@ -25,7 +25,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Inter:wght@400;500;600&family=Archivo+Black&display=swap" rel="stylesheet" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -211,6 +211,70 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .cta-band { background: #1E3CFF; }
     .cta-band .btn-primary { background: #4DB8FF; color: #0A1033; }
     .cta-band .btn-primary:hover { background: #7AC9FF; color: #0A1033; }
+
+    /* ─── Langage visuel : hero bleu, relief, verre ─── */
+    .hx-grid { position: absolute; inset: 0; pointer-events: none; z-index: 0;
+      background-image: linear-gradient(to right, rgba(255,255,255,.09) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,.09) 1px, transparent 1px);
+      background-size: 4rem 4rem; }
+    .hx-card { position: absolute; z-index: 30; animation: hx-float 5s ease-in-out infinite; }
+    .hx-glass { width: 11rem; aspect-ratio: 3 / 3.2; background: rgba(255,255,255,.18); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,.4); border-radius: 2rem; padding: 1rem; display: flex; flex-direction: column; align-items: center; justify-content: center;
+      box-shadow: 0 25px 50px -12px rgba(0,0,40,.35); transition: transform .5s; text-align: center; color: #fff; }
+    .hx-glass:hover { transform: rotate(0deg) !important; }
+    .hx-big { font-family: 'Archivo Black', 'Arial Black', Impact, sans-serif; font-size: 2.3rem; line-height: 1; color: #fff; text-shadow: 0.03rem 0.03rem 0 #0A1FA0, 0.06rem 0.06rem 0 #0A1FA0, 0.09rem 0.09rem 0 #0A1FA0, 0.12rem 0.12rem 0 #0A1FA0, 0.15rem 0.15rem 0 #0A1FA0, 0.18rem 0.18rem 0 #0A1FA0, 0.21rem 0.21rem 0 #0A1FA0; margin-bottom: .6rem; }
+    .hx-n { font-weight: 700; font-size: 1rem; color: #fff; margin: 0; }
+    .hx-m { font-size: .72rem; color: rgba(255,255,255,.85); margin: .3rem 0 0; }
+    @keyframes hx-float { 0%, 100% { translate: 0 0; } 50% { translate: 0 -14px; } }
+    @keyframes hx-spin { to { transform: rotate(360deg); } }
+    .hx-badge { position: absolute; z-index: 40; width: 7.6rem; height: 7.6rem; border-radius: 50%; background: #4DB8FF; color: #0A1033;
+      display: flex; align-items: center; justify-content: center; transform: rotate(12deg); box-shadow: 0 20px 40px rgba(0,0,40,.3); transition: transform .25s; }
+    .hx-badge:hover { transform: rotate(12deg) scale(1.06); }
+    .hx-badge .ring { position: absolute; inset: 4px; animation: hx-spin 10s linear infinite; }
+    .hx-badge .ring svg { width: 100%; height: 100%; }
+    .hx-badge .ring text { font-family: 'Archivo Black', 'Arial Black', Impact, sans-serif; font-size: 7.4px; letter-spacing: .06em; fill: #0A1033; text-transform: uppercase; }
+    .hx-badge .go { width: 2.2rem; height: 2.2rem; stroke: #0A1033; fill: none; stroke-width: 8; stroke-linecap: round; stroke-linejoin: round; overflow: visible; position: relative; }
+    @media (prefers-reduced-motion: reduce) { .hx-card, .hx-badge .ring { animation: none; } }
+
+    /* ─── Sous-pages : même langage que l'accueil ─── */
+    nav { background: #1E3CFF; border-bottom: none; -webkit-backdrop-filter: none; backdrop-filter: none; }
+    .nav-logo { color: #fff; }
+    .logo-syd { background: none; -webkit-text-fill-color: #4DB8FF; color: #4DB8FF; }
+    .nav-back { color: #fff; border: 1px solid rgba(255,255,255,.4); border-radius: 999px; padding: 6px 14px; }
+    .nav-back:hover { background: rgba(255,255,255,.14); color: #fff; }
+    .hero { position: relative; background: #1E3CFF; color: #fff; overflow: hidden; padding: 48px 0 0; }
+    .hero > .container { position: relative; z-index: 2; }
+    .hero::after { content: ''; display: block; position: relative; z-index: 3; height: 56px; margin-top: 56px; background: #fff; border-radius: 2.5rem 2.5rem 0 0; box-shadow: 0 -20px 50px rgba(0,0,40,.2); }
+    .hero h1 { font-family: 'Archivo Black', 'Arial Black', Impact, sans-serif; font-weight: 900; text-transform: uppercase; letter-spacing: -.02em; line-height: .98; color: #fff; font-size: clamp(1.8rem, 4.1vw, 3.1rem); text-shadow: 0.0058em 0.0058em 0 #0A1FA0, 0.0116em 0.0116em 0 #0A1FA0, 0.0174em 0.0174em 0 #0A1FA0, 0.0232em 0.0232em 0 #0A1FA0, 0.029em 0.029em 0 #0A1FA0, 0.0348em 0.0348em 0 #0A1FA0, 0.0406em 0.0406em 0 #0A1FA0, 0.0464em 0.0464em 0 #0A1FA0, 0.0522em 0.0522em 0 #0A1FA0, 0.058em 0.058em 0 #0A1FA0, 0.0638em 0.0638em 0 #0A1FA0, 0.0696em 0.0696em 0 #0A1FA0, 0.0754em 0.0754em 0 #0A1FA0, 0.0812em 0.0812em 0 #0A1FA0; margin-bottom: 22px; }
+    .hero h1 .hl { background: none; -webkit-text-fill-color: #4DB8FF; color: #4DB8FF; }
+    .hero .badge { background: rgba(255,255,255,.16); border: 1px solid rgba(255,255,255,.4); color: #fff; margin-bottom: 20px; }
+    .hero .hero-sub { color: rgba(255,255,255,.92); }
+    .hero .btn-primary { background: #4DB8FF; color: #0A1033; box-shadow: none; }
+    .hero .btn-primary:hover { background: #7AC9FF; color: #0A1033; }
+    .hero .btn-ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,.7); }
+    .hero .btn-ghost:hover { background: rgba(255,255,255,.14); border-color: #fff; color: #fff; }
+    .hero .mockup-wrapper { background: #fff; padding: 4px; box-shadow: 0 30px 60px -20px rgba(0,0,40,.5); transform: rotate(-2deg); animation: hx-float 6s ease-in-out infinite; }
+    .hero .mockup-caption { color: rgba(255,255,255,.8); }
+    .hero .hx-badge-sub { top: -2.6rem; right: -1.4rem; }
+    .hx-cards-col { position: relative; min-height: 20rem; }
+    .hx-cards-col .hx-card:nth-child(1) { top: 0; left: 6%; }
+    .hx-cards-col .hx-card:nth-child(1) .hx-glass { transform: rotate(-10deg); }
+    .hx-cards-col .hx-card:nth-child(2) { bottom: 0; right: 4%; animation-duration: 6s; animation-delay: 1s; }
+    .hx-cards-col .hx-card:nth-child(2) .hx-glass { transform: rotate(10deg); }
+    .hx-cards-col .hx-badge { bottom: -1rem; left: 0; }
+    h2, .section-title { font-family: 'Archivo Black', 'Arial Black', Impact, sans-serif; font-weight: 900; text-transform: uppercase; letter-spacing: -.02em; line-height: 1.05; }
+    .section-title { font-size: clamp(1.5rem, 3.2vw, 2.3rem); }
+    .card h3, .step h3 { font-family: 'Archivo Black', 'Arial Black', Impact, sans-serif; font-weight: 900; text-transform: uppercase; font-size: .98rem; letter-spacing: -.01em; }
+    .card, .testi-card { border-radius: 2rem; background: #F3F7FF; border-color: #E1E7F5; }
+    .cta-band { position: relative; overflow: hidden; border-radius: 2.5rem; background-color: #1E3CFF;
+      background-image: linear-gradient(to right, rgba(255,255,255,.09) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,.09) 1px, transparent 1px); background-size: 4rem 4rem; }
+    .cta-band h2 { text-shadow: 0.012rem 0.012rem 0 #0A1FA0, 0.024rem 0.024rem 0 #0A1FA0, 0.036rem 0.036rem 0 #0A1FA0, 0.048rem 0.048rem 0 #0A1FA0, 0.06rem 0.06rem 0 #0A1FA0, 0.072rem 0.072rem 0 #0A1FA0, 0.084rem 0.084rem 0 #0A1FA0, 0.096rem 0.096rem 0 #0A1FA0, 0.108rem 0.108rem 0 #0A1FA0; }
+    @media (max-width: 860px) {
+      .hx-cards-col { min-height: 0; display: flex; gap: 14px; justify-content: center; align-items: center; flex-wrap: wrap; padding-top: 12px; }
+      .hx-cards-col .hx-card, .hx-cards-col .hx-badge { position: static; }
+      .hx-glass { width: 8.4rem; padding: .7rem; border-radius: 1.5rem; } .hx-big { font-size: 1.6rem; }
+      .hero .hx-badge-sub { top: -2rem; right: -.4rem; width: 5.6rem; height: 5.6rem; }
+      .hx-cards-col .hx-badge { width: 6rem; height: 6rem; }
+    }
 </style>
 </head>
 <body>
@@ -223,7 +287,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <nav>
   <div class="nav-inner">
     <a href="index.html" class="nav-logo">
-      <img src="logo-icon.png" alt="AgenSyd" />
+      <img src="logo-icon-onblue.png" alt="AgenSyd" />
       <span>Agen<span class="logo-syd">Syd</span></span>
     </a>
     <a href="index.html" class="nav-back">
@@ -234,7 +298,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </nav>
 
 <header class="hero">
-  <div class="container">
+  <div class="hx-grid" aria-hidden="true"></div>
+  <div class="container hero-grid"><div>
     <span class="badge">Lyon 6e</span>
     <h1>Agence web à <span class="hl">Lyon</span> pour restaurants, hôtels et spas.</h1>
     <p class="hero-sub">AgenSyd crée des sites sur-mesure pour les commerces de l'hôtellerie et de la restauration. Basée à Lyon, on accompagne aussi toute la France.</p>
@@ -242,7 +307,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a href="index.html#contact" class="btn btn-primary">Démarrer mon projet</a>
       <a href="tel:+33698312855" class="btn btn-ghost">Nous appeler</a>
     </div>
-  </div>
+  </div><div class="hx-cards-col"><div class="hx-card"><div class="hx-glass"><div class="hx-big">Lyon</div><p class="hx-n">Lyon 6e</p><p class="hx-m">45 bd des Belges</p></div></div><div class="hx-card"><div class="hx-glass"><div class="hx-big">France</div><p class="hx-n">Partout</p><p class="hx-m">accompagnement à distance</p></div></div><a class="hx-badge " href="index.html#contact" aria-label="Devis gratuit sous 2 heures, démarrer mon projet"><div class="ring" aria-hidden="true"><svg viewBox="0 0 100 100"><path id="hxCircle" d="M 50, 50 m -36, 0 a 36,36 0 1,1 72,0 a 36,36 0 1,1 -72,0" fill="none"/><text><textPath href="#hxCircle" startOffset="0%" textLength="222" lengthAdjust="spacing">Devis gratuit sous 2h • Voir mon site •</textPath></text></svg></div><svg class="go" viewBox="0 0 100 100" aria-hidden="true"><path d="M20,80 Q 40,50 30,30 T 80,20"/><path d="M60,10 L80,20 L70,40"/></svg></a></div></div>
 </header>
 <section>
   <div class="container">

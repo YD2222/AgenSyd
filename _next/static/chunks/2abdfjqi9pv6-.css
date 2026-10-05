@@ -6,3 +6,21 @@
 .bg-tape\/40{background-color:rgba(77,184,255,.25)}
 button.bg-tape{background-color:#fff;color:#1e3cff}
 button.bg-tape:hover{background-color:#e8f4ff}
+
+/* Hero bleu : même langage que le reste du site */
+header.mx-auto, main > section:first-child { background: #1E3CFF; box-shadow: 0 0 0 100vmax #1E3CFF; clip-path: inset(0 -100vmax); }
+header.mx-auto { color: #fff; max-width: none; padding-left: max(1.25rem, calc((100vw - 72rem) / 2 + 1.25rem)); padding-right: max(1.25rem, calc((100vw - 72rem) / 2 + 1.25rem)); }
+header.mx-auto a, header.mx-auto span { color: #fff; }
+header.mx-auto a:hover { color: #4DB8FF; }
+header.mx-auto a.rounded-lg { border-color: rgba(255,255,255,.7); border-radius: 999px; }
+header.mx-auto a.rounded-lg:hover { background: #fff; color: #1E3CFF; }
+main > section:first-child h1 { font-family: 'Archivo Black','Arial Black',Impact,sans-serif; text-transform: uppercase; color: #fff; letter-spacing: -.02em; line-height: .95; text-shadow: 0.0062em 0.0062em 0 #0A1FA0, 0.0124em 0.0124em 0 #0A1FA0, 0.0186em 0.0186em 0 #0A1FA0, 0.0248em 0.0248em 0 #0A1FA0, 0.031em 0.031em 0 #0A1FA0, 0.0372em 0.0372em 0 #0A1FA0, 0.0434em 0.0434em 0 #0A1FA0, 0.0496em 0.0496em 0 #0A1FA0, 0.0558em 0.0558em 0 #0A1FA0, 0.062em 0.062em 0 #0A1FA0, 0.0682em 0.0682em 0 #0A1FA0, 0.0744em 0.0744em 0 #0A1FA0, 0.0806em 0.0806em 0 #0A1FA0, 0.0868em 0.0868em 0 #0A1FA0; }
+main > section:first-child > div:first-child > p { color: rgba(255,255,255,.9); }
+main > section:first-child .text-brand { color: #4DB8FF; }
+main > section:first-child > div:first-child label, main > section:first-child > div:first-child .text-ink { color: #fff; }
+main > section:first-child a.bg-brand { background: #4DB8FF; color: #0A1033; border-radius: 999px; }
+main > section:first-child a.bg-brand:hover { background: #7AC9FF; }
+main > section:first-child a.underline, main > section:first-child a[href="#fonctionnement"] { color: #fff; border-color: rgba(255,255,255,.6); }
+main > section:first-child input { border-radius: 999px; }
+main > section:nth-child(2) { position: relative; background: #fff; border-radius: 2.5rem 2.5rem 0 0; box-shadow: 0 -20px 50px rgba(0,0,40,.2); margin-top: -2.5rem; padding-top: 1.5rem; }
+h2.font-display, h3.font-display { font-family: 'Archivo Black','Arial Black',Impact,sans-serif; text-transform: uppercase; letter-spacing: -.02em; }
