@@ -919,7 +919,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .how-steps { grid-template-columns: repeat(2, 1fr); }
       .footer-grid { grid-template-columns: 1fr 1fr; }
     }
-    @media (max-width: 1180px) {
+    @media (max-width: 1260px) {
       .nav-links, .nav-cta .btn-ghost, .nav-cta .btn-primary { display: none; }
       .nav-hamburger { display: flex; }
       .nav-cta { margin-left: auto; }
@@ -980,7 +980,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       font-family: 'Archivo Black', 'Arial Black', Impact, sans-serif; font-weight: 900; position: relative; z-index: 10; }
     .hx-title span { display: block; white-space: nowrap; text-shadow: 0.0062em 0.0062em 0 #0A1FA0, 0.0124em 0.0124em 0 #0A1FA0, 0.0186em 0.0186em 0 #0A1FA0, 0.0248em 0.0248em 0 #0A1FA0, 0.031em 0.031em 0 #0A1FA0, 0.0372em 0.0372em 0 #0A1FA0, 0.0434em 0.0434em 0 #0A1FA0, 0.0496em 0.0496em 0 #0A1FA0, 0.0558em 0.0558em 0 #0A1FA0, 0.062em 0.062em 0 #0A1FA0, 0.0682em 0.0682em 0 #0A1FA0, 0.0744em 0.0744em 0 #0A1FA0, 0.0806em 0.0806em 0 #0A1FA0, 0.0868em 0.0868em 0 #0A1FA0; }
     .hx-l1 { align-self: flex-start; margin-left: 10%; font-size: clamp(1.9rem, 6.2vw, 5.2rem); color: #4DB8FF; position: relative; z-index: 30; }
-    .hx-l2 { align-self: center; font-size: clamp(2.6rem, 10.2vw, 7.8rem); color: #fff; position: relative; z-index: 20; }
+    .hx-l2 { align-self: center; font-size: clamp(2.6rem, 9.2vw, 7rem); color: #fff; position: relative; z-index: 20; }
     .hx-l3 { align-self: flex-start; margin-left: 22%; font-size: clamp(1.9rem, 6.2vw, 5.2rem); color: #fff; }
     .hx-over { position: absolute; inset: 0; pointer-events: none; }
     .hx-card { position: absolute; z-index: 30; pointer-events: auto; animation: hx-float 5s ease-in-out infinite; }
@@ -1066,8 +1066,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     #navbar.scrolled .logo-blue { display: none; }
     #navbar:not(.scrolled) .nav-logo > span { color: #fff; }
     #navbar:not(.scrolled) .logo-syd { background: none; -webkit-text-fill-color: #4DB8FF; color: #4DB8FF; }
-    #navbar:not(.scrolled) .nav-links { gap: 8px; }
-    #navbar:not(.scrolled) .nav-links a { color: #fff; border: 1px solid rgba(255,255,255,.32); border-radius: 999px; padding: 5px 11px; font-size: .78rem; white-space: nowrap; }
+    #navbar:not(.scrolled) .nav-links { gap: 6px; }
+    #navbar:not(.scrolled) .nav-links a { color: #fff; border: 1px solid rgba(255,255,255,.32); border-radius: 999px; padding: 5px 9px; font-size: .75rem; white-space: nowrap; }
     #navbar:not(.scrolled) .nav-links a:hover { background: rgba(255,255,255,.12); color: #fff; }
     #navbar:not(.scrolled) .nav-cta .btn-ghost { color: #fff; border-color: rgba(255,255,255,.8); }
     #navbar:not(.scrolled) .nav-cta .btn-ghost:hover { background: #fff; color: #1E3CFF; }
@@ -1086,6 +1086,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     .cta-wrapper, #agencies { background-image: linear-gradient(to right, rgba(255,255,255,.09) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,.09) 1px, transparent 1px); background-size: 4rem 4rem; }
     .cta-wrapper { border-radius: 2.5rem; }
     .cta-text-col h2 { text-shadow: 0.012rem 0.012rem 0 #0A1FA0, 0.024rem 0.024rem 0 #0A1FA0, 0.036rem 0.036rem 0 #0A1FA0, 0.048rem 0.048rem 0 #0A1FA0, 0.06rem 0.06rem 0 #0A1FA0, 0.072rem 0.072rem 0 #0A1FA0, 0.084rem 0.084rem 0 #0A1FA0, 0.096rem 0.096rem 0 #0A1FA0, 0.108rem 0.108rem 0 #0A1FA0; }
+
+    /* ─── Section CRM ─── */
+    #crm { padding: 100px 0; background: #fff; }
+    .crmx-head { text-align: center; margin-bottom: 48px; }
+    .crmx-head .section-sub { margin: 0 auto; }
+    .crmx-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .crmx-card { background: #F3F7FF; border: 1px solid #E1E7F5; border-radius: 2rem; padding: 32px; }
+    .crmx-min { font-family: 'Archivo Black', 'Arial Black', Impact, sans-serif; font-size: 2.4rem; line-height: 1; color: var(--brand); margin-bottom: 14px; }
+    .crmx-card h3 { font-family: 'Archivo Black', 'Arial Black', Impact, sans-serif; font-weight: 900; text-transform: uppercase; font-size: 1.05rem; letter-spacing: -.01em; margin-bottom: 8px; }
+    .crmx-card p:last-child { color: var(--text-2); font-size: .95rem; line-height: 1.6; }
+    .crmx-actions { display: flex; flex-wrap: wrap; gap: 12px; justify-content: center; margin-top: 40px; }
+    @media (max-width: 900px) { #crm { padding: 72px 0; } .crmx-grid { grid-template-columns: 1fr; } }
+
+    /* ─── Menu : pleine largeur, liens compacts ─── */
+    #navbar .container { max-width: none; padding: 0 28px; }
+    #navbar .nav-links { gap: 2px; }
+    #navbar .nav-links a { padding: 8px 11px; border: 1px solid transparent; border-radius: 999px; font-size: .86rem; }
+    #navbar.scrolled .nav-links a:hover { background: var(--brand-pale); color: var(--brand); }
+    #navbar:not(.scrolled) .nav-links a { border-color: transparent; padding: 8px 11px; font-size: .86rem; }
+    #navbar .nav-cta { gap: 10px; }
+    #navbar .nav-cta .btn { padding: 10px 18px; font-size: .86rem; }
+    #navbar .nav-cta .btn-icon { width: 42px; height: 42px; padding: 0; justify-content: center; }
+    #navbar .nav-cta .btn-icon svg { width: 18px; height: 18px; }
 </style>
 </head>
 <body>
@@ -1111,12 +1134,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <li><a href="#comparison">Comparatif</a></li>
         <li><a href="#how">Comment ça marche</a></li>
         <li><a href="#pricing">Tarifs</a></li>
+        <li><a href="crm.html">CRM</a></li>
+        <li><a href="sous-traitance.html">Sous-traitance</a></li>
         <li><a href="#testimonials">Avis clients</a></li>
         <li><a href="#faq">FAQ</a></li>
-        <li><a href="sous-traitance.html">Sous-traitance agences</a></li>
       </ul>
       <div class="nav-cta">
-        <a href="tel:+33698312855" class="btn btn-ghost">Nous appeler</a>
+        <a href="tel:+33698312855" class="btn btn-ghost btn-icon" aria-label="Nous appeler : 06 98 31 28 55" title="06 98 31 28 55"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg></a>
         <a href="#contact" class="btn btn-primary">
           Démarrer mon projet
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
@@ -1135,6 +1159,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <a href="#pricing" onclick="closeMobile()">Tarifs</a>
   <a href="#testimonials" onclick="closeMobile()">Avis clients</a>
   <a href="#faq" onclick="closeMobile()">FAQ</a>
+  <a href="crm.html" onclick="closeMobile()">CRM sur mesure</a>
   <a href="sous-traitance.html" onclick="closeMobile()">Sous-traitance agences</a>
   <a href="#contact" class="btn btn-primary" onclick="closeMobile()">Démarrer mon projet</a>
   <a href="tel:+33698312855" class="btn btn-ghost" onclick="closeMobile()">Nous appeler</a>
@@ -1656,6 +1681,26 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </div>
 </section>
 
+<!-- ─── CRM ─── -->
+<section id="crm" aria-labelledby="crm-title">
+  <div class="container">
+    <div class="crmx-head">
+      <p class="section-label">Nouveau : CRM sur mesure</p>
+      <h2 class="section-title" id="crm-title">Vous gérez des réservations ? Un CRM sur mesure.</h2>
+      <p class="section-sub">Location de véhicules, hôtels, spas : réservations, clients et relances au même endroit. On commence par un audit gratuit de 20 minutes.</p>
+    </div>
+    <div class="crmx-grid">
+      <div class="crmx-card"><p class="crmx-min">5 min</p><h3>L'existant</h3><p>Comment vous gérez aujourd'hui les réservations et vos clients.</p></div>
+      <div class="crmx-card"><p class="crmx-min">10 min</p><h3>Les pertes de temps</h3><p>On repère ensemble trois sources de perte de temps ou d'erreurs.</p></div>
+      <div class="crmx-card"><p class="crmx-min">5 min</p><h3>La restitution</h3><p>Ce qu'un CRM changerait, et notre recommandation, par écrit.</p></div>
+    </div>
+    <div class="crmx-actions">
+      <a href="crm.html" class="btn btn-primary">Découvrir le CRM</a>
+      <a href="https://wa.me/33698312855?text=Bonjour%2C%20je%20souhaite%20r%C3%A9server%20un%20audit%20gratuit%20de%2020%20minutes%20pour%20un%20CRM%20avec%20AgenSyd." target="_blank" rel="noopener" class="btn btn-ghost">Réserver mon audit gratuit</a>
+    </div>
+  </div>
+</section>
+
 <!-- ─── TESTIMONIALS ─── -->
 <section id="testimonials" aria-labelledby="testi-title">
   <div class="container">
@@ -1944,6 +1989,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           <li><a href="site-web-rapide.html">Site web rapide</a></li>
           <li><a href="abonnement-site-web.html">Paiement en mensualités</a></li>
           <li><a href="agence-web-lyon.html">Agence web Lyon</a></li>
+          <li><a href="crm.html">CRM sur mesure</a></li>
           <li><a href="sous-traitance.html">Sous-traitance agences</a></li>
           <li><a href="#how">Comment ça marche</a></li>
         </ul>

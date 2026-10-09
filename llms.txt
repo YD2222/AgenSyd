@@ -13,6 +13,7 @@ Basée à Lyon (45 boulevard des Belges, 69006). Contact : contact@agensyd.fr / 
 - [Restaurants](https://www.agensyd.fr/restaurants.html) : offre sites pour restaurants
 - [Hôtels](https://www.agensyd.fr/hotels.html) : offre sites pour hôtels
 - [Spas](https://www.agensyd.fr/spas.html) : offre sites pour spas
+- [CRM sur mesure](https://www.agensyd.fr/crm.html) : CRM sur mesure pour agences de location de véhicules, hôtels et spas ; audit gratuit de 20 minutes (5 min sur l'existant, 10 min sur les pertes de temps, 5 min de restitution)
 - [Sous-traitance pour agences](https://www.agensyd.fr/sous-traitance.html) : production de sites en marque blanche pour agences web, agences de communication et freelances
 
 ## À propos
